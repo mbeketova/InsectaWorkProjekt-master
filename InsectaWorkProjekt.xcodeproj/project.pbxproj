@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84354C131AD7322100812782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C121AD7322100812782 /* main.m */; };
+		84354C161AD7322100812782 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C151AD7322100812782 /* AppDelegate.m */; };
+		84354C191AD7322100812782 /* InsectaWorkProjekt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84354C171AD7322100812782 /* InsectaWorkProjekt.xcdatamodeld */; };
+		84354C1C1AD7322100812782 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C1B1AD7322100812782 /* ViewController.m */; };
+		84354C1F1AD7322100812782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84354C1D1AD7322100812782 /* Main.storyboard */; };
+		84354C211AD7322100812782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84354C201AD7322100812782 /* Images.xcassets */; };
+		84354C241AD7322100812782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84354C221AD7322100812782 /* LaunchScreen.xib */; };
+		84354C301AD7322100812782 /* InsectaWorkProjektTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C2F1AD7322100812782 /* InsectaWorkProjektTests.m */; };
+		84354C3B1AD7326E00812782 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84354C3A1AD7326E00812782 /* UIKit.framework */; };
+		84354C3D1AD7327A00812782 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84354C3C1AD7327A00812782 /* CoreGraphics.framework */; };
+		84354C3F1AD7328500812782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84354C3E1AD7328500812782 /* Foundation.framework */; };
+		84354C411AD7329000812782 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84354C401AD7329000812782 /* QuartzCore.framework */; };
+		84354C471AD736BF00812782 /* fauna_cikada.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84354C461AD736BF00812782 /* fauna_cikada.gif */; };
+		84354C491AD7428C00812782 /* строение1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C481AD7428C00812782 /* строение1.jpg */; };
+		84354C4B1AD7432200812782 /* строение6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C4A1AD7432200812782 /* строение6.jpg */; };
+		84354C581AD7EC4B00812782 /* DatailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C571AD7EC4B00812782 /* DatailViewController.m */; };
+		84354C5F1AD880B100812782 /* ArrayInsecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C5E1AD880B100812782 /* ArrayInsecta.m */; };
+		84354C661AD89E1E00812782 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C651AD89E1E00812782 /* CustomTableViewCell.m */; };
+		84354C691AD8A89A00812782 /* бессяжковые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C681AD8A89A00812782 /* бессяжковые.jpg */; };
+		84354C6B1AD8A8A800812782 /* двухвостые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C6A1AD8A8A800812782 /* двухвостые.jpg */; };
+		84354C6D1AD8A8B400812782 /* ногохвостки.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C6C1AD8A8B400812782 /* ногохвостки.jpg */; };
+		84354C6F1AD8A8BC00812782 /* щетинохвостки.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C6E1AD8A8BC00812782 /* щетинохвостки.jpg */; };
+		84354C721AD8B63B00812782 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C711AD8B63B00812782 /* MenuViewController.m */; };
+		84354C7F1AD8DB7C00812782 /* бахромчатокрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C731AD8DB7C00812782 /* бахромчатокрылые.jpg */; };
+		84354C801AD8DB7C00812782 /* богомолы.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C741AD8DB7C00812782 /* богомолы.jpg */; };
+		84354C811AD8DB7C00812782 /* двукрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C751AD8DB7C00812782 /* двукрылые.jpg */; };
+		84354C821AD8DB7C00812782 /* жесткокрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C761AD8DB7C00812782 /* жесткокрылые.jpg */; };
+		84354C831AD8DB7C00812782 /* перепончатокрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C771AD8DB7C00812782 /* перепончатокрылые.jpg */; };
+		84354C841AD8DB7C00812782 /* полужесткокрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C781AD8DB7C00812782 /* полужесткокрылые.jpg */; };
+		84354C851AD8DB7C00812782 /* прямокрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C791AD8DB7C00812782 /* прямокрылые.jpg */; };
+		84354C861AD8DB7C00812782 /* равнокрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C7A1AD8DB7C00812782 /* равнокрылые.jpg */; };
+		84354C871AD8DB7C00812782 /* сетчатокрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C7B1AD8DB7C00812782 /* сетчатокрылые.jpg */; };
+		84354C881AD8DB7C00812782 /* стрекозы.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C7C1AD8DB7C00812782 /* стрекозы.jpg */; };
+		84354C891AD8DB7C00812782 /* тараканы.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C7D1AD8DB7C00812782 /* тараканы.jpg */; };
+		84354C8A1AD8DB7C00812782 /* уховертки.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C7E1AD8DB7C00812782 /* уховертки.jpg */; };
+		84354C8C1AD8DB9300812782 /* чешуекрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C8B1AD8DB9300812782 /* чешуекрылые.jpg */; };
+		8453B1831AD9800100CAFFBA /* бабочки.png in Resources */ = {isa = PBXBuildFile; fileRef = 8453B1821AD9800100CAFFBA /* бабочки.png */; };
+		8453B1851AD9881200CAFFBA /* 1295432XU3U0-342A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453B1841AD9881200CAFFBA /* 1295432XU3U0-342A.jpg */; };
+		8453B1871AD99BAA00CAFFBA /* icon-arrow_prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 8453B1861AD99BAA00CAFFBA /* icon-arrow_prev.png */; };
+		8453B1891AD99BB800CAFFBA /* siguiente.png in Resources */ = {isa = PBXBuildFile; fileRef = 8453B1881AD99BB800CAFFBA /* siguiente.png */; };
+		8453B18C1AD9A42600CAFFBA /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B18B1AD9A42600CAFFBA /* EntryViewController.m */; };
+		8453B18F1AD9A4E200CAFFBA /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B18E1AD9A4E200CAFFBA /* ContentViewController.m */; };
+		8453B1921AD9A55100CAFFBA /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B1911AD9A55100CAFFBA /* InformationViewController.m */; };
+		8453B1951AD9A62800CAFFBA /* StructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B1941AD9A62800CAFFBA /* StructureViewController.m */; };
+		8453B1A71ADB088D00CAFFBA /* первичнобезкрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453B1A61ADB088D00CAFFBA /* первичнобезкрылые.jpg */; };
+		8453B1AD1ADB2A7B00CAFFBA /* SubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B1AC1ADB2A7B00CAFFBA /* SubTableViewCell.m */; };
+		8453B1B01ADB2CE400CAFFBA /* SubDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B1AF1ADB2CE400CAFFBA /* SubDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84354C2A1AD7322100812782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84354C051AD7322100812782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84354C0C1AD7322100812782;
+			remoteInfo = InsectaWorkProjekt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84354C0D1AD7322100812782 /* InsectaWorkProjekt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsectaWorkProjekt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84354C111AD7322100812782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84354C121AD7322100812782 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84354C141AD7322100812782 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84354C151AD7322100812782 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84354C181AD7322100812782 /* InsectaWorkProjekt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InsectaWorkProjekt.xcdatamodel; sourceTree = "<group>"; };
+		84354C1A1AD7322100812782 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84354C1B1AD7322100812782 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84354C1E1AD7322100812782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84354C201AD7322100812782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84354C231AD7322100812782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		84354C291AD7322100812782 /* InsectaWorkProjektTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsectaWorkProjektTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84354C2E1AD7322100812782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84354C2F1AD7322100812782 /* InsectaWorkProjektTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsectaWorkProjektTests.m; sourceTree = "<group>"; };
+		84354C3A1AD7326E00812782 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84354C3C1AD7327A00812782 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84354C3E1AD7328500812782 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84354C401AD7329000812782 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		84354C461AD736BF00812782 /* fauna_cikada.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fauna_cikada.gif; sourceTree = "<group>"; };
+		84354C481AD7428C00812782 /* строение1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "строение1.jpg"; sourceTree = "<group>"; };
+		84354C4A1AD7432200812782 /* строение6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "строение6.jpg"; sourceTree = "<group>"; };
+		84354C561AD7EC4B00812782 /* DatailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatailViewController.h; path = InsectaWorkProjekt/DatailViewController.h; sourceTree = "<group>"; };
+		84354C571AD7EC4B00812782 /* DatailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatailViewController.m; path = InsectaWorkProjekt/DatailViewController.m; sourceTree = "<group>"; };
+		84354C5D1AD880B100812782 /* ArrayInsecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrayInsecta.h; path = InsectaWorkProjekt/ArrayInsecta.h; sourceTree = "<group>"; };
+		84354C5E1AD880B100812782 /* ArrayInsecta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrayInsecta.m; path = InsectaWorkProjekt/ArrayInsecta.m; sourceTree = "<group>"; };
+		84354C641AD89E1E00812782 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableViewCell.h; path = InsectaWorkProjekt/CustomTableViewCell.h; sourceTree = "<group>"; };
+		84354C651AD89E1E00812782 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTableViewCell.m; path = InsectaWorkProjekt/CustomTableViewCell.m; sourceTree = "<group>"; };
+		84354C681AD8A89A00812782 /* бессяжковые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "бессяжковые.jpg"; sourceTree = "<group>"; };
+		84354C6A1AD8A8A800812782 /* двухвостые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "двухвостые.jpg"; sourceTree = "<group>"; };
+		84354C6C1AD8A8B400812782 /* ногохвостки.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ногохвостки.jpg"; sourceTree = "<group>"; };
+		84354C6E1AD8A8BC00812782 /* щетинохвостки.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "щетинохвостки.jpg"; sourceTree = "<group>"; };
+		84354C701AD8B63B00812782 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = InsectaWorkProjekt/MenuViewController.h; sourceTree = "<group>"; };
+		84354C711AD8B63B00812782 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = InsectaWorkProjekt/MenuViewController.m; sourceTree = "<group>"; };
+		84354C731AD8DB7C00812782 /* бахромчатокрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "бахромчатокрылые.jpg"; sourceTree = "<group>"; };
+		84354C741AD8DB7C00812782 /* богомолы.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "богомолы.jpg"; sourceTree = "<group>"; };
+		84354C751AD8DB7C00812782 /* двукрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "двукрылые.jpg"; sourceTree = "<group>"; };
+		84354C761AD8DB7C00812782 /* жесткокрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "жесткокрылые.jpg"; sourceTree = "<group>"; };
+		84354C771AD8DB7C00812782 /* перепончатокрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "перепончатокрылые.jpg"; sourceTree = "<group>"; };
+		84354C781AD8DB7C00812782 /* полужесткокрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "полужесткокрылые.jpg"; sourceTree = "<group>"; };
+		84354C791AD8DB7C00812782 /* прямокрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "прямокрылые.jpg"; sourceTree = "<group>"; };
+		84354C7A1AD8DB7C00812782 /* равнокрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "равнокрылые.jpg"; sourceTree = "<group>"; };
+		84354C7B1AD8DB7C00812782 /* сетчатокрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "сетчатокрылые.jpg"; sourceTree = "<group>"; };
+		84354C7C1AD8DB7C00812782 /* стрекозы.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "стрекозы.jpg"; sourceTree = "<group>"; };
+		84354C7D1AD8DB7C00812782 /* тараканы.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "тараканы.jpg"; sourceTree = "<group>"; };
+		84354C7E1AD8DB7C00812782 /* уховертки.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "уховертки.jpg"; sourceTree = "<group>"; };
+		84354C8B1AD8DB9300812782 /* чешуекрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "чешуекрылые.jpg"; sourceTree = "<group>"; };
+		8453B1821AD9800100CAFFBA /* бабочки.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "бабочки.png"; sourceTree = "<group>"; };
+		8453B1841AD9881200CAFFBA /* 1295432XU3U0-342A.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1295432XU3U0-342A.jpg"; sourceTree = "<group>"; };
+		8453B1861AD99BAA00CAFFBA /* icon-arrow_prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-arrow_prev.png"; sourceTree = "<group>"; };
+		8453B1881AD99BB800CAFFBA /* siguiente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siguiente.png; sourceTree = "<group>"; };
+		8453B18A1AD9A42600CAFFBA /* EntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryViewController.h; path = InsectaWorkProjekt/EntryViewController.h; sourceTree = "<group>"; };
+		8453B18B1AD9A42600CAFFBA /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryViewController.m; path = InsectaWorkProjekt/EntryViewController.m; sourceTree = "<group>"; };
+		8453B18D1AD9A4E200CAFFBA /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentViewController.h; path = InsectaWorkProjekt/ContentViewController.h; sourceTree = "<group>"; };
+		8453B18E1AD9A4E200CAFFBA /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContentViewController.m; path = InsectaWorkProjekt/ContentViewController.m; sourceTree = "<group>"; };
+		8453B1901AD9A55100CAFFBA /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InformationViewController.h; path = InsectaWorkProjekt/InformationViewController.h; sourceTree = "<group>"; };
+		8453B1911AD9A55100CAFFBA /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationViewController.m; path = InsectaWorkProjekt/InformationViewController.m; sourceTree = "<group>"; };
+		8453B1931AD9A62800CAFFBA /* StructureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StructureViewController.h; path = InsectaWorkProjekt/StructureViewController.h; sourceTree = "<group>"; };
+		8453B1941AD9A62800CAFFBA /* StructureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StructureViewController.m; path = InsectaWorkProjekt/StructureViewController.m; sourceTree = "<group>"; };
+		8453B1A61ADB088D00CAFFBA /* первичнобезкрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "первичнобезкрылые.jpg"; sourceTree = "<group>"; };
+		8453B1AB1ADB2A7B00CAFFBA /* SubTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTableViewCell.h; sourceTree = "<group>"; };
+		8453B1AC1ADB2A7B00CAFFBA /* SubTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTableViewCell.m; sourceTree = "<group>"; };
+		8453B1AE1ADB2CE400CAFFBA /* SubDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubDetailViewController.h; sourceTree = "<group>"; };
+		8453B1AF1ADB2CE400CAFFBA /* SubDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84354C0A1AD7322100812782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84354C411AD7329000812782 /* QuartzCore.framework in Frameworks */,
+				84354C3F1AD7328500812782 /* Foundation.framework in Frameworks */,
+				84354C3D1AD7327A00812782 /* CoreGraphics.framework in Frameworks */,
+				84354C3B1AD7326E00812782 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84354C261AD7322100812782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84354C041AD7322100812782 = {
+			isa = PBXGroup;
+			children = (
+				8453B1991AD9BFFB00CAFFBA /* InformView */,
+				8453B1981AD9BFED00CAFFBA /* EntryView */,
+				8453B1971AD9BFDB00CAFFBA /* ContentView */,
+				8453B1961AD9BF9500CAFFBA /* StructureView */,
+				84354C8E1AD8E20C00812782 /* MenuView */,
+				84354C8D1AD8E1E700812782 /* ArrayInsecta */,
+				84354C671AD8A24800812782 /* Image */,
+				84354C601AD89B2D00812782 /* CustomCell */,
+				84354C421AD7329E00812782 /* Framework */,
+				84354C391AD7323400812782 /* DetailView */,
+				84354C0F1AD7322100812782 /* InsectaWorkProjekt */,
+				84354C2C1AD7322100812782 /* InsectaWorkProjektTests */,
+				84354C0E1AD7322100812782 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84354C0E1AD7322100812782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84354C0D1AD7322100812782 /* InsectaWorkProjekt.app */,
+				84354C291AD7322100812782 /* InsectaWorkProjektTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84354C0F1AD7322100812782 /* InsectaWorkProjekt */ = {
+			isa = PBXGroup;
+			children = (
+				84354C141AD7322100812782 /* AppDelegate.h */,
+				84354C151AD7322100812782 /* AppDelegate.m */,
+				84354C1A1AD7322100812782 /* ViewController.h */,
+				84354C1B1AD7322100812782 /* ViewController.m */,
+				84354C1D1AD7322100812782 /* Main.storyboard */,
+				84354C201AD7322100812782 /* Images.xcassets */,
+				84354C221AD7322100812782 /* LaunchScreen.xib */,
+				84354C171AD7322100812782 /* InsectaWorkProjekt.xcdatamodeld */,
+				84354C101AD7322100812782 /* Supporting Files */,
+			);
+			path = InsectaWorkProjekt;
+			sourceTree = "<group>";
+		};
+		84354C101AD7322100812782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84354C111AD7322100812782 /* Info.plist */,
+				84354C121AD7322100812782 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84354C2C1AD7322100812782 /* InsectaWorkProjektTests */ = {
+			isa = PBXGroup;
+			children = (
+				84354C2F1AD7322100812782 /* InsectaWorkProjektTests.m */,
+				84354C2D1AD7322100812782 /* Supporting Files */,
+			);
+			path = InsectaWorkProjektTests;
+			sourceTree = "<group>";
+		};
+		84354C2D1AD7322100812782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84354C2E1AD7322100812782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84354C391AD7323400812782 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				84354C561AD7EC4B00812782 /* DatailViewController.h */,
+				84354C571AD7EC4B00812782 /* DatailViewController.m */,
+				8453B1AE1ADB2CE400CAFFBA /* SubDetailViewController.h */,
+				8453B1AF1ADB2CE400CAFFBA /* SubDetailViewController.m */,
+				8453B1AB1ADB2A7B00CAFFBA /* SubTableViewCell.h */,
+				8453B1AC1ADB2A7B00CAFFBA /* SubTableViewCell.m */,
+			);
+			name = DetailView;
+			sourceTree = "<group>";
+		};
+		84354C421AD7329E00812782 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				84354C401AD7329000812782 /* QuartzCore.framework */,
+				84354C3E1AD7328500812782 /* Foundation.framework */,
+				84354C3C1AD7327A00812782 /* CoreGraphics.framework */,
+				84354C3A1AD7326E00812782 /* UIKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		84354C601AD89B2D00812782 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				84354C641AD89E1E00812782 /* CustomTableViewCell.h */,
+				84354C651AD89E1E00812782 /* CustomTableViewCell.m */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		84354C671AD8A24800812782 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				8453B1861AD99BAA00CAFFBA /* icon-arrow_prev.png */,
+				84354C681AD8A89A00812782 /* бессяжковые.jpg */,
+				8453B1821AD9800100CAFFBA /* бабочки.png */,
+				84354C6A1AD8A8A800812782 /* двухвостые.jpg */,
+				8453B1841AD9881200CAFFBA /* 1295432XU3U0-342A.jpg */,
+				8453B1A61ADB088D00CAFFBA /* первичнобезкрылые.jpg */,
+				84354C6C1AD8A8B400812782 /* ногохвостки.jpg */,
+				84354C8B1AD8DB9300812782 /* чешуекрылые.jpg */,
+				84354C4A1AD7432200812782 /* строение6.jpg */,
+				8453B1881AD99BB800CAFFBA /* siguiente.png */,
+				84354C731AD8DB7C00812782 /* бахромчатокрылые.jpg */,
+				84354C741AD8DB7C00812782 /* богомолы.jpg */,
+				84354C751AD8DB7C00812782 /* двукрылые.jpg */,
+				84354C761AD8DB7C00812782 /* жесткокрылые.jpg */,
+				84354C771AD8DB7C00812782 /* перепончатокрылые.jpg */,
+				84354C781AD8DB7C00812782 /* полужесткокрылые.jpg */,
+				84354C791AD8DB7C00812782 /* прямокрылые.jpg */,
+				84354C7A1AD8DB7C00812782 /* равнокрылые.jpg */,
+				84354C7B1AD8DB7C00812782 /* сетчатокрылые.jpg */,
+				84354C7C1AD8DB7C00812782 /* стрекозы.jpg */,
+				84354C7D1AD8DB7C00812782 /* тараканы.jpg */,
+				84354C7E1AD8DB7C00812782 /* уховертки.jpg */,
+				84354C481AD7428C00812782 /* строение1.jpg */,
+				84354C461AD736BF00812782 /* fauna_cikada.gif */,
+				84354C6E1AD8A8BC00812782 /* щетинохвостки.jpg */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		84354C8D1AD8E1E700812782 /* ArrayInsecta */ = {
+			isa = PBXGroup;
+			children = (
+				84354C5D1AD880B100812782 /* ArrayInsecta.h */,
+				84354C5E1AD880B100812782 /* ArrayInsecta.m */,
+			);
+			name = ArrayInsecta;
+			sourceTree = "<group>";
+		};
+		84354C8E1AD8E20C00812782 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				84354C701AD8B63B00812782 /* MenuViewController.h */,
+				84354C711AD8B63B00812782 /* MenuViewController.m */,
+			);
+			name = MenuView;
+			sourceTree = "<group>";
+		};
+		8453B1961AD9BF9500CAFFBA /* StructureView */ = {
+			isa = PBXGroup;
+			children = (
+				8453B1931AD9A62800CAFFBA /* StructureViewController.h */,
+				8453B1941AD9A62800CAFFBA /* StructureViewController.m */,
+			);
+			name = StructureView;
+			sourceTree = "<group>";
+		};
+		8453B1971AD9BFDB00CAFFBA /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				8453B18D1AD9A4E200CAFFBA /* ContentViewController.h */,
+				8453B18E1AD9A4E200CAFFBA /* ContentViewController.m */,
+			);
+			name = ContentView;
+			sourceTree = "<group>";
+		};
+		8453B1981AD9BFED00CAFFBA /* EntryView */ = {
+			isa = PBXGroup;
+			children = (
+				8453B18A1AD9A42600CAFFBA /* EntryViewController.h */,
+				8453B18B1AD9A42600CAFFBA /* EntryViewController.m */,
+			);
+			name = EntryView;
+			sourceTree = "<group>";
+		};
+		8453B1991AD9BFFB00CAFFBA /* InformView */ = {
+			isa = PBXGroup;
+			children = (
+				8453B1901AD9A55100CAFFBA /* InformationViewController.h */,
+				8453B1911AD9A55100CAFFBA /* InformationViewController.m */,
+			);
+			name = InformView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84354C0C1AD7322100812782 /* InsectaWorkProjekt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84354C331AD7322100812782 /* Build configuration list for PBXNativeTarget "InsectaWorkProjekt" */;
+			buildPhases = (
+				84354C091AD7322100812782 /* Sources */,
+				84354C0A1AD7322100812782 /* Frameworks */,
+				84354C0B1AD7322100812782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InsectaWorkProjekt;
+			productName = InsectaWorkProjekt;
+			productReference = 84354C0D1AD7322100812782 /* InsectaWorkProjekt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84354C281AD7322100812782 /* InsectaWorkProjektTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84354C361AD7322100812782 /* Build configuration list for PBXNativeTarget "InsectaWorkProjektTests" */;
+			buildPhases = (
+				84354C251AD7322100812782 /* Sources */,
+				84354C261AD7322100812782 /* Frameworks */,
+				84354C271AD7322100812782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84354C2B1AD7322100812782 /* PBXTargetDependency */,
+			);
+			name = InsectaWorkProjektTests;
+			productName = InsectaWorkProjektTests;
+			productReference = 84354C291AD7322100812782 /* InsectaWorkProjektTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84354C051AD7322100812782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Mariya Beketova";
+				TargetAttributes = {
+					84354C0C1AD7322100812782 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					84354C281AD7322100812782 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 84354C0C1AD7322100812782;
+					};
+				};
+			};
+			buildConfigurationList = 84354C081AD7322100812782 /* Build configuration list for PBXProject "InsectaWorkProjekt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84354C041AD7322100812782;
+			productRefGroup = 84354C0E1AD7322100812782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84354C0C1AD7322100812782 /* InsectaWorkProjekt */,
+				84354C281AD7322100812782 /* InsectaWorkProjektTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84354C0B1AD7322100812782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84354C6F1AD8A8BC00812782 /* щетинохвостки.jpg in Resources */,
+				84354C811AD8DB7C00812782 /* двукрылые.jpg in Resources */,
+				84354C6B1AD8A8A800812782 /* двухвостые.jpg in Resources */,
+				84354C851AD8DB7C00812782 /* прямокрылые.jpg in Resources */,
+				84354C1F1AD7322100812782 /* Main.storyboard in Resources */,
+				84354C881AD8DB7C00812782 /* стрекозы.jpg in Resources */,
+				84354C871AD8DB7C00812782 /* сетчатокрылые.jpg in Resources */,
+				84354C841AD8DB7C00812782 /* полужесткокрылые.jpg in Resources */,
+				8453B1851AD9881200CAFFBA /* 1295432XU3U0-342A.jpg in Resources */,
+				84354C491AD7428C00812782 /* строение1.jpg in Resources */,
+				84354C241AD7322100812782 /* LaunchScreen.xib in Resources */,
+				84354C211AD7322100812782 /* Images.xcassets in Resources */,
+				84354C691AD8A89A00812782 /* бессяжковые.jpg in Resources */,
+				8453B1871AD99BAA00CAFFBA /* icon-arrow_prev.png in Resources */,
+				84354C801AD8DB7C00812782 /* богомолы.jpg in Resources */,
+				84354C821AD8DB7C00812782 /* жесткокрылые.jpg in Resources */,
+				8453B1891AD99BB800CAFFBA /* siguiente.png in Resources */,
+				84354C4B1AD7432200812782 /* строение6.jpg in Resources */,
+				84354C861AD8DB7C00812782 /* равнокрылые.jpg in Resources */,
+				84354C891AD8DB7C00812782 /* тараканы.jpg in Resources */,
+				84354C831AD8DB7C00812782 /* перепончатокрылые.jpg in Resources */,
+				84354C7F1AD8DB7C00812782 /* бахромчатокрылые.jpg in Resources */,
+				84354C8C1AD8DB9300812782 /* чешуекрылые.jpg in Resources */,
+				84354C6D1AD8A8B400812782 /* ногохвостки.jpg in Resources */,
+				84354C471AD736BF00812782 /* fauna_cikada.gif in Resources */,
+				8453B1A71ADB088D00CAFFBA /* первичнобезкрылые.jpg in Resources */,
+				8453B1831AD9800100CAFFBA /* бабочки.png in Resources */,
+				84354C8A1AD8DB7C00812782 /* уховертки.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84354C271AD7322100812782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84354C091AD7322100812782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8453B1AD1ADB2A7B00CAFFBA /* SubTableViewCell.m in Sources */,
+				8453B1921AD9A55100CAFFBA /* InformationViewController.m in Sources */,
+				84354C161AD7322100812782 /* AppDelegate.m in Sources */,
+				84354C661AD89E1E00812782 /* CustomTableViewCell.m in Sources */,
+				84354C191AD7322100812782 /* InsectaWorkProjekt.xcdatamodeld in Sources */,
+				84354C721AD8B63B00812782 /* MenuViewController.m in Sources */,
+				8453B1B01ADB2CE400CAFFBA /* SubDetailViewController.m in Sources */,
+				8453B18C1AD9A42600CAFFBA /* EntryViewController.m in Sources */,
+				84354C1C1AD7322100812782 /* ViewController.m in Sources */,
+				8453B18F1AD9A4E200CAFFBA /* ContentViewController.m in Sources */,
+				8453B1951AD9A62800CAFFBA /* StructureViewController.m in Sources */,
+				84354C131AD7322100812782 /* main.m in Sources */,
+				84354C5F1AD880B100812782 /* ArrayInsecta.m in Sources */,
+				84354C581AD7EC4B00812782 /* DatailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84354C251AD7322100812782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84354C301AD7322100812782 /* InsectaWorkProjektTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84354C2B1AD7322100812782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84354C0C1AD7322100812782 /* InsectaWorkProjekt */;
+			targetProxy = 84354C2A1AD7322100812782 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84354C1D1AD7322100812782 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84354C1E1AD7322100812782 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84354C221AD7322100812782 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84354C231AD7322100812782 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84354C311AD7322100812782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84354C321AD7322100812782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84354C341AD7322100812782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InsectaWorkProjekt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84354C351AD7322100812782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InsectaWorkProjekt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84354C371AD7322100812782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InsectaWorkProjektTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InsectaWorkProjekt.app/InsectaWorkProjekt";
+			};
+			name = Debug;
+		};
+		84354C381AD7322100812782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InsectaWorkProjektTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InsectaWorkProjekt.app/InsectaWorkProjekt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84354C081AD7322100812782 /* Build configuration list for PBXProject "InsectaWorkProjekt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84354C311AD7322100812782 /* Debug */,
+				84354C321AD7322100812782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84354C331AD7322100812782 /* Build configuration list for PBXNativeTarget "InsectaWorkProjekt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84354C341AD7322100812782 /* Debug */,
+				84354C351AD7322100812782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84354C361AD7322100812782 /* Build configuration list for PBXNativeTarget "InsectaWorkProjektTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84354C371AD7322100812782 /* Debug */,
+				84354C381AD7322100812782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84354C171AD7322100812782 /* InsectaWorkProjekt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84354C181AD7322100812782 /* InsectaWorkProjekt.xcdatamodel */,
+			);
+			currentVersion = 84354C181AD7322100812782 /* InsectaWorkProjekt.xcdatamodel */;
+			path = InsectaWorkProjekt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84354C051AD7322100812782 /* Project object */;
+}

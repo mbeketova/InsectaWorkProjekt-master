@@ -114,10 +114,10 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
 
 + (NSMutableArray *) makeSubArrayDiptera {
     
-    //создаем массив по крылоносным:
+    //создаем массив по двукрылым:
     
     
-    NSString * stringValueSub = @"Длинноусые, Короткоусые";
+    NSString * stringValueSub = @"Длинноусые двукрылые, Короткоусые двукрылые";
     NSString * stringValueLatSub = @"Nevatocera, Brachycera";
     
     //заносим в массив значения из строки без символов запятая и пробел:
@@ -155,7 +155,7 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
 
 + (NSMutableArray *) makeSubArrayHomoptera {
     
-    //создаем массив по крылоносным:
+    //создаем массив по равнокрылым:
     
     
     NSString * stringValueSub = @"Цикадовые, Листоблошки, Белокрылки, Тли, Кокциды";
@@ -192,5 +192,167 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
     return arrayMSub;
 }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
+
++ (NSMutableArray *) makeSubArrayColeoptera {
+    
+    //создаем массив по жесткокрылым:
+    
+    
+    NSString * stringValueSub = @"Плотоядные, Разноядные";
+    NSString * stringValueLatSub = @"Adephaga, Polyphaga";
+    
+    //заносим в массив значения из строки без символов запятая и пробел:
+    
+    NSArray * arrayValueSub = [stringValueSub componentsSeparatedByString:@", "];
+    NSArray * arrayValueLatSub = [stringValueLatSub componentsSeparatedByString:@", "];
+    NSMutableArray * arrayMSub = [[NSMutableArray alloc]init];
+    
+    //данный цикл записывает в коллекцию значения из массива arrayValue и соответствующие ему значения из массива arrayValueLat, пока не закончатся элементы в массиве arrayPrice:
+    
+    for (int i = 0; i < arrayValueSub.count; i++) {
+        
+        NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
+        [dict setObject:[arrayValueSub objectAtIndex:i] forKey:@"valueSub"];
+        [dict setObject:[arrayValueLatSub objectAtIndex:i] forKey:@"latvalueSub"];
+        //      [dict setObject:[self.arrayDescript objectAtIndex:i] forKey:@"discr"]; - добавить, когда внесу описания
+        
+        [arrayMSub addObject:dict];
+        
+        
+    }
+    
+    
+    
+    //здесь сортируем массив по названию:
+    NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"valueSub" ascending:YES];
+    NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
+    [arrayMSub sortUsingDescriptors:descriptors];
+    
+    
+    return arrayMSub;
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
++ (NSMutableArray *) makeSubArrayOdonatoptera {
+    
+    //создаем массив по стрекозам:
+    
+    
+    NSString * stringValueSub = @"Равнокрылые стрекозы, Разнокрылые стрекозы";
+    NSString * stringValueLatSub = @"Zygoptera, Anisoptera";
+    
+    //заносим в массив значения из строки без символов запятая и пробел:
+    
+    NSArray * arrayValueSub = [stringValueSub componentsSeparatedByString:@", "];
+    NSArray * arrayValueLatSub = [stringValueLatSub componentsSeparatedByString:@", "];
+    NSMutableArray * arrayMSub = [[NSMutableArray alloc]init];
+    
+    //данный цикл записывает в коллекцию значения из массива arrayValue и соответствующие ему значения из массива arrayValueLat, пока не закончатся элементы в массиве arrayPrice:
+    
+    for (int i = 0; i < arrayValueSub.count; i++) {
+        
+        NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
+        [dict setObject:[arrayValueSub objectAtIndex:i] forKey:@"valueSub"];
+        [dict setObject:[arrayValueLatSub objectAtIndex:i] forKey:@"latvalueSub"];
+        //      [dict setObject:[self.arrayDescript objectAtIndex:i] forKey:@"discr"]; - добавить, когда внесу описания
+        
+        [arrayMSub addObject:dict];
+        
+        
+    }
+    
+    
+    
+    //здесь сортируем массив по названию:
+    NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"valueSub" ascending:YES];
+    NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
+    [arrayMSub sortUsingDescriptors:descriptors];
+    
+    
+    return arrayMSub;
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------------
+
++ (NSMutableArray *) makeSubArrayOrthoptera {
+    
+    //создаем массив по прямокрылым:
+    
+    
+    NSString * stringValueSub = @"Длинноусые прямокрылые, Короткоусые прямокрылые";
+    NSString * stringValueLatSub = @"Dolichoera, Caelifera";
+    
+    //заносим в массив значения из строки без символов запятая и пробел:
+    
+    NSArray * arrayValueSub = [stringValueSub componentsSeparatedByString:@", "];
+    NSArray * arrayValueLatSub = [stringValueLatSub componentsSeparatedByString:@", "];
+    NSMutableArray * arrayMSub = [[NSMutableArray alloc]init];
+    
+    //данный цикл записывает в коллекцию значения из массива arrayValue и соответствующие ему значения из массива arrayValueLat, пока не закончатся элементы в массиве arrayPrice:
+    
+    for (int i = 0; i < arrayValueSub.count; i++) {
+        
+        NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
+        [dict setObject:[arrayValueSub objectAtIndex:i] forKey:@"valueSub"];
+        [dict setObject:[arrayValueLatSub objectAtIndex:i] forKey:@"latvalueSub"];
+        //      [dict setObject:[self.arrayDescript objectAtIndex:i] forKey:@"discr"]; - добавить, когда внесу описания
+        
+        [arrayMSub addObject:dict];
+        
+        
+    }
+    
+    
+    
+    //здесь сортируем массив по названию:
+    NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"valueSub" ascending:YES];
+    NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
+    [arrayMSub sortUsingDescriptors:descriptors];
+    
+    
+    return arrayMSub;
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------------
+
++ (NSMutableArray *) makeSubArrayHymenoptera {
+    
+    //создаем массив по перепончатокрылым:
+    
+    
+    NSString * stringValueSub = @"Сидячебрюхие, Стебельчатобрюхие";
+    NSString * stringValueLatSub = @"Symphyta, Apocrita";
+    
+    //заносим в массив значения из строки без символов запятая и пробел:
+    
+    NSArray * arrayValueSub = [stringValueSub componentsSeparatedByString:@", "];
+    NSArray * arrayValueLatSub = [stringValueLatSub componentsSeparatedByString:@", "];
+    NSMutableArray * arrayMSub = [[NSMutableArray alloc]init];
+    
+    //данный цикл записывает в коллекцию значения из массива arrayValue и соответствующие ему значения из массива arrayValueLat, пока не закончатся элементы в массиве arrayPrice:
+    
+    for (int i = 0; i < arrayValueSub.count; i++) {
+        
+        NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
+        [dict setObject:[arrayValueSub objectAtIndex:i] forKey:@"valueSub"];
+        [dict setObject:[arrayValueLatSub objectAtIndex:i] forKey:@"latvalueSub"];
+        //      [dict setObject:[self.arrayDescript objectAtIndex:i] forKey:@"discr"]; - добавить, когда внесу описания
+        
+        [arrayMSub addObject:dict];
+        
+        
+    }
+    
+    
+    
+    //здесь сортируем массив по названию:
+    NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"valueSub" ascending:YES];
+    NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
+    [arrayMSub sortUsingDescriptors:descriptors];
+    
+    
+    return arrayMSub;
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 @end

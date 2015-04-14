@@ -45,17 +45,33 @@
 - (void) makeFirstArray {
     self.isFirstArray = YES;
     self.arrayMSub = [[NSMutableArray alloc]init];
-    DatailViewController * datailViewController = [[DatailViewController alloc]init];
-    NSString*textValue;
-    [datailViewController tabSubOder:textValue];
-    if ([textValue isEqualToString:@"двукрылые"]) {
+
+    if ([self.string_MainValue  isEqualToString:@"двукрылые"]) {
         [self.arrayMSub removeAllObjects];
         self.arrayMSub = [ArrayInsecta makeSubArrayDiptera];
     }
-    else if ([textValue isEqualToString:@"равнокрылые"]) {
+    else if ([self.string_MainValue isEqualToString:@"равнокрылые"]) {
         [self.arrayMSub removeAllObjects];
         self.arrayMSub = [ArrayInsecta makeSubArrayHomoptera];
     }
+    
+    else if ([self.string_MainValue isEqualToString:@"жесткокрылые"]) {
+        [self.arrayMSub removeAllObjects];
+        self.arrayMSub = [ArrayInsecta makeSubArrayColeoptera];
+    }
+    else if ([self.string_MainValue isEqualToString:@"стрекозы"]) {
+        [self.arrayMSub removeAllObjects];
+        self.arrayMSub = [ArrayInsecta makeSubArrayOdonatoptera];
+    }
+    else if ([self.string_MainValue isEqualToString:@"прямокрылые"]) {
+        [self.arrayMSub removeAllObjects];
+        self.arrayMSub = [ArrayInsecta makeSubArrayOrthoptera];
+    }
+    else if ([self.string_MainValue isEqualToString:@"перепончатокрылые"]) {
+        [self.arrayMSub removeAllObjects];
+        self.arrayMSub = [ArrayInsecta makeSubArrayHymenoptera];
+    }
+    
     
 
 }

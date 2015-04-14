@@ -13,7 +13,15 @@
 
 + (NSMutableArray *) makeFirstArray;
 + (NSMutableArray *) makeAnotherArray;
+
 + (NSMutableArray *) makeSubArrayDiptera;
 + (NSMutableArray *) makeSubArrayHomoptera;
+
++ (NSMutableArray *) makeSubArrayColeoptera;
++ (NSMutableArray *) makeSubArrayOdonatoptera;
++ (NSMutableArray *) makeSubArrayOrthoptera;
++ (NSMutableArray *) makeSubArrayHymenoptera;
+
+
 
 @end

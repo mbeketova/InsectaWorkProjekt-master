@@ -22,6 +22,6 @@
 
 
 @property (nonatomic, strong) NSMutableArray * arrayMSub;
-- (void) tabSubOder:(NSString*)textValue;
+
 
 @end

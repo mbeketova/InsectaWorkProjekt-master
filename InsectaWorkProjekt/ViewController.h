@@ -15,8 +15,6 @@
 @property (nonatomic, strong) NSMutableArray * arrayM;
 @property (nonatomic, strong) NSMutableArray * arrayMSub;
 @property (nonatomic, assign) BOOL isFirstArray;
-@property (nonatomic, assign) BOOL isFirstArrayD;
-@property (nonatomic, assign) BOOL isFirstArrayH;
 
 @end
 

@@ -64,7 +64,7 @@
 
 
 
-//метод на срабатывание первой кнопки:
+//метод на срабатывание первой кнопки (подотряды):
 
 - (void) makeSubArrayOder {
 
@@ -76,13 +76,13 @@
 }
 
 
-
+//метод на срабатывание второй кнопки (семейства):
 
 - (void) makeSubArrayRod {
         SubDetailViewController * view = [self.storyboard instantiateViewControllerWithIdentifier:@"Cell2"];
         [self.navigationController pushViewController:view animated:YES];
         view.isFirstArray = NO;
-       // view.string_MainValue = self.label_MainValue.text;
+        // view.string_MainValue = self.label_MainValue.text; - это добавим после того, как заполним массив с семействами
 
 }
 

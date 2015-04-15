@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SubDetailViewController.h"
 
+
 @interface DatailViewController : UIViewController
 
 @property (nonatomic, strong) NSString *string_MainValue;

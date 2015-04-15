@@ -10,32 +10,45 @@
 
 @protocol ArrayInsectaDelegate;
 
+
 @interface ArrayInsecta : NSObject
 
 - (void) makeFirstArray;
 - (void) makeAnotherArray;
 
+- (void) makeSubArrayDiptera;
+- (void) makeSubArrayHomoptera;
+- (void) makeSubArrayColeoptera;
+- (void) makeSubArrayOdonatoptera;
+- (void) makeSubArrayOrthoptera;
+- (void) makeSubArrayHymenoptera;
 
-+ (NSMutableArray *) makeSubArrayDiptera;
-+ (NSMutableArray *) makeSubArrayHomoptera;
-+ (NSMutableArray *) makeSubArrayColeoptera;
-+ (NSMutableArray *) makeSubArrayOdonatoptera;
-+ (NSMutableArray *) makeSubArrayOrthoptera;
-+ (NSMutableArray *) makeSubArrayHymenoptera;
 
 @property (weak, nonatomic) id <ArrayInsectaDelegate> delegate;
+
+
 
 @end
 
 @protocol ArrayInsectaDelegate <NSObject>
 
-@required
+//@required - указывать, если обязательные
 
+@optional
+//к первой таблице (выгрузка отрядов):
 - (void) makeArraysFirstArrayReady:(ArrayInsecta*) makeArrays FirstArray:(NSMutableArray*) firstArray;
 - (void) makeArraysSecondArrayReady:(ArrayInsecta*) makeArrays SecondArray:(NSMutableArray*) secondArray;
 
-//@optional
-//- сюда запишем остальные таблицы для реализации Подотрядов
-
+//ко второй таблице (выгрузка подотрядов):
+- (void) makeSubArrayDipteraArrays: (ArrayInsecta*) makeSubArrays DipteraArray:(NSMutableArray*) dipteraArray;
+- (void) makeSubArrayHomopteraArrays: (ArrayInsecta*) makeSubArrays HomopteraArray:(NSMutableArray*) homopteraArray;
+- (void) makeSubArrayColeopteraArrays:(ArrayInsecta *) makeSubArrays ColeopteraArray:(NSMutableArray *)coleopteraArray;
+- (void) makeSubArrayOdonatopteraArrays:(ArrayInsecta *) makeSubArrays OdonatopteraArray:(NSMutableArray *)odonatopteraArray;
+- (void) makeSubArrayOrthopteraArrays:(ArrayInsecta *) makeSubArrays OrthopteraArray:(NSMutableArray *)orthopteraArray;
+- (void) makeSubArrayHymenopteraArrays:(ArrayInsecta *) makeSubArrays HymenopteraArray:(NSMutableArray *)hymenopteraArray;
 
 @end
+
+
+//@optional - если есть какие-либо необязательные методы
+

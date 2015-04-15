@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ArrayInsecta.h"
 
 @interface SubDetailViewController : UIViewController
 

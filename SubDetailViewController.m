@@ -8,12 +8,13 @@
 
 #import "SubDetailViewController.h"
 #import "SubTableViewCell.h"
-#import "ArrayInsecta.h"
 #import "DatailViewController.h"
+
 
 @interface SubDetailViewController ()
 
-@property (strong, nonatomic) IBOutlet UITableView *SubTableView;
+@property (strong, nonatomic) IBOutlet UITableView *subTableView;
+
 
 
 
@@ -39,37 +40,38 @@
     
 }
 
-//здесь должен подгружаться один из двух массивов (в плане их должно быть 2 или 6 - в зависимости от названия лейбла)
-//но в результате получаю пустой массив:
+//здесь подгружается один из 6 массивов (в зависимости от того, какой отряд отображается на лейбле)
 
 - (void) makeFirstArray {
-    self.isFirstArray = YES;
+
     self.arrayMSub = [[NSMutableArray alloc]init];
+    ArrayInsecta * arrayInsecta = [[ArrayInsecta alloc]init];
+    [arrayInsecta setDelegate:self];
 
     if ([self.string_MainValue  isEqualToString:@"двукрылые"]) {
-        [self.arrayMSub removeAllObjects];
-        self.arrayMSub = [ArrayInsecta makeSubArrayDiptera];
+        
+        [arrayInsecta makeSubArrayDiptera];
     }
     else if ([self.string_MainValue isEqualToString:@"равнокрылые"]) {
-        [self.arrayMSub removeAllObjects];
-        self.arrayMSub = [ArrayInsecta makeSubArrayHomoptera];
+     
+        [arrayInsecta makeSubArrayHomoptera];
     }
     
     else if ([self.string_MainValue isEqualToString:@"жесткокрылые"]) {
-        [self.arrayMSub removeAllObjects];
-        self.arrayMSub = [ArrayInsecta makeSubArrayColeoptera];
+ 
+        [arrayInsecta makeSubArrayColeoptera];
     }
     else if ([self.string_MainValue isEqualToString:@"стрекозы"]) {
-        [self.arrayMSub removeAllObjects];
-        self.arrayMSub = [ArrayInsecta makeSubArrayOdonatoptera];
+  
+        [arrayInsecta makeSubArrayOdonatoptera];
     }
     else if ([self.string_MainValue isEqualToString:@"прямокрылые"]) {
-        [self.arrayMSub removeAllObjects];
-        self.arrayMSub = [ArrayInsecta makeSubArrayOrthoptera];
+    
+        [arrayInsecta makeSubArrayOrthoptera];
     }
     else if ([self.string_MainValue isEqualToString:@"перепончатокрылые"]) {
-        [self.arrayMSub removeAllObjects];
-        self.arrayMSub = [ArrayInsecta makeSubArrayHymenoptera];
+
+        [arrayInsecta makeSubArrayHymenoptera];
     }
     
     
@@ -79,11 +81,60 @@
 //возвращает второй массив для таблички (обработанный методом makeAnotherArray из класса ArrayInsecta
 - (void) makeAnotherArray {
     self.isFirstArray = NO;
+    [self reloadTableView]; //перегружаем таблицу
+    [self.arrayMSub removeAllObjects]; // очищаем массив
 
 
 }
 
+#pragma mark - ArrayInsectaDelegate
 
+//получаем таблицу:
+
+- (void) makeSubArrayDipteraArrays: (ArrayInsecta*) makeSubArrays DipteraArray:(NSMutableArray*) dipteraArray; {
+        [self reloadTableView]; //перегружаем таблицу
+        [self.arrayMSub removeAllObjects]; // очищаем массив
+        self.arrayMSub = dipteraArray; //получаем таблицу по методу протокола
+        self.isFirstArray = YES;
+    
+}
+- (void) makeSubArrayHomopteraArrays: (ArrayInsecta*) makeSubArrays HomopteraArray:(NSMutableArray*) homopteraArray;{
+        [self reloadTableView]; //перегружаем таблицу
+        [self.arrayMSub removeAllObjects]; // очищаем массив
+        self.arrayMSub = homopteraArray; //получаем таблицу по методу протокола
+        self.isFirstArray = YES;
+    
+}
+- (void) makeSubArrayColeopteraArrays:(ArrayInsecta *) makeSubArrays ColeopteraArray:(NSMutableArray *)coleopteraArray;{
+        [self reloadTableView]; //перегружаем таблицу
+        [self.arrayMSub removeAllObjects]; // очищаем массив
+        self.arrayMSub = coleopteraArray; //получаем таблицу по методу протокола
+        self.isFirstArray = YES;
+    
+}
+- (void) makeSubArrayOdonatopteraArrays:(ArrayInsecta *) makeSubArrays OdonatopteraArray:(NSMutableArray *)odonatopteraArray;{
+        [self reloadTableView]; //перегружаем таблицу
+        [self.arrayMSub removeAllObjects]; // очищаем массив
+        self.arrayMSub = odonatopteraArray; //получаем таблицу по методу протокола
+        self.isFirstArray = YES;
+
+    
+}
+- (void) makeSubArrayOrthopteraArrays:(ArrayInsecta *) makeSubArrays OrthopteraArray:(NSMutableArray *)orthopteraArray;{
+        [self reloadTableView]; //перегружаем таблицу
+        [self.arrayMSub removeAllObjects]; // очищаем массив
+        self.arrayMSub = orthopteraArray; //получаем таблицу по методу протокола
+        self.isFirstArray = YES;
+
+    
+}
+- (void) makeSubArrayHymenopteraArrays:(ArrayInsecta *) makeSubArrays HymenopteraArray:(NSMutableArray *)hymenopteraArray;{
+        [self reloadTableView]; //перегружаем таблицу
+        [self.arrayMSub removeAllObjects]; // очищаем массив
+        self.arrayMSub = hymenopteraArray; //получаем таблицу по методу протокола
+        self.isFirstArray = YES;
+    
+}
 
 
 
@@ -119,7 +170,23 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    
+}
+
+- (IBAction)button_SubOrder:(id)sender {
+    [self makeFirstArray];
+}
+
+- (IBAction)button_FamilyOrder:(id)sender {
+    [self makeAnotherArray];
+}
+
+
+
+
+//метод, который перезагружает таблицу в текущем окне:
+- (void) reloadTableView {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.subTableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];});
 }
 
 

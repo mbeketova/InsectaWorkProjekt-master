@@ -124,7 +124,7 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
 }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
 
-+ (NSMutableArray *) makeSubArrayDiptera {
+- (void) makeSubArrayDiptera {
     
     //создаем массив по двукрылым:
     
@@ -148,24 +148,22 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
         //      [dict setObject:[self.arrayDescript objectAtIndex:i] forKey:@"discr"]; - добавить, когда внесу описания
         
         [arrayMSub addObject:dict];
-        
-        
     }
-    
-    
-    
+   
     //здесь сортируем массив по названию:
     NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"valueSub" ascending:YES];
     NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
     [arrayMSub sortUsingDescriptors:descriptors];
     
+    [self.delegate makeSubArrayDipteraArrays:self DipteraArray:arrayMSub];
     
-    return arrayMSub;
+    
+
 }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-+ (NSMutableArray *) makeSubArrayHomoptera {
+- (void) makeSubArrayHomoptera {
     
     //создаем массив по равнокрылым:
     
@@ -193,19 +191,18 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
         
     }
     
-    
-    
     //здесь сортируем массив по названию:
     NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"valueSub" ascending:YES];
     NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
     [arrayMSub sortUsingDescriptors:descriptors];
     
+    [self.delegate makeSubArrayHomopteraArrays: self HomopteraArray:arrayMSub];
     
-    return arrayMSub;
+
 }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
 
-+ (NSMutableArray *) makeSubArrayColeoptera {
+- (void) makeSubArrayColeoptera {
     
     //создаем массив по жесткокрылым:
     
@@ -232,21 +229,20 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
         
         
     }
-    
-    
-    
+   
     //здесь сортируем массив по названию:
     NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"valueSub" ascending:YES];
     NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
     [arrayMSub sortUsingDescriptors:descriptors];
     
+    [self.delegate makeSubArrayColeopteraArrays: self ColeopteraArray:arrayMSub];
     
-    return arrayMSub;
+
 }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-+ (NSMutableArray *) makeSubArrayOdonatoptera {
+- (void) makeSubArrayOdonatoptera {
     
     //создаем массив по стрекозам:
     
@@ -274,19 +270,17 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
         
     }
     
-    
-    
     //здесь сортируем массив по названию:
     NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"valueSub" ascending:YES];
     NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
     [arrayMSub sortUsingDescriptors:descriptors];
     
-    
-    return arrayMSub;
+    [self.delegate makeSubArrayOdonatopteraArrays: self OdonatopteraArray: arrayMSub];
+
 }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
 
-+ (NSMutableArray *) makeSubArrayOrthoptera {
+- (void) makeSubArrayOrthoptera {
     
     //создаем массив по прямокрылым:
     
@@ -314,19 +308,18 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
         
     }
     
-    
-    
     //здесь сортируем массив по названию:
     NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"valueSub" ascending:YES];
     NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
     [arrayMSub sortUsingDescriptors:descriptors];
     
+    [self.delegate makeSubArrayOrthopteraArrays: self OrthopteraArray:arrayMSub];
     
-    return arrayMSub;
+
 }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
 
-+ (NSMutableArray *) makeSubArrayHymenoptera {
+- (void) makeSubArrayHymenoptera {
     
     //создаем массив по перепончатокрылым:
     
@@ -354,15 +347,14 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
         
     }
     
-    
-    
     //здесь сортируем массив по названию:
     NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"valueSub" ascending:YES];
     NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
     [arrayMSub sortUsingDescriptors:descriptors];
     
-    
-    return arrayMSub;
+    [self.delegate makeSubArrayHymenopteraArrays:self HymenopteraArray:arrayMSub];
+   
+
 }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
 

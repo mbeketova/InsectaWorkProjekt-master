@@ -12,6 +12,9 @@
 
 @interface ArrayInsecta : NSObject
 
+- (void) makeFirstArray;
+- (void) makeAnotherArray;
+
 
 + (NSMutableArray *) makeSubArrayDiptera;
 + (NSMutableArray *) makeSubArrayHomoptera;

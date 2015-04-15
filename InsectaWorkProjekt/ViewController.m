@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "ArrayInsecta.h"
 #import "DatailViewController.h"
 #import "CustomTableViewCell.h"
 #import "EntryViewController.h"
@@ -21,11 +20,8 @@
 
 
 @interface ViewController ()
-
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIButton *button_one;
-@property (weak, nonatomic) IBOutlet UIButton *button_two;
-
+@property (nonatomic, strong) ArrayInsecta * arrayInsecta;
 
 
 @end
@@ -39,39 +35,27 @@
 
 //производим выбор метода при нажатии кнопок:
     if (self.isFirstArray) {
-        [self makeFirstArray];
+        [self makeFirst];
     }
     else {
-        [self makeAnotherArray];
+        [self makeAnother];
     }
     
-    
 }
-
-
-
-
 
 
 //возвращает первый массив для таблички (обработанный методом makeFirstArray из класса ArrayInsecta
-- (void) makeFirstArray {
-    
+- (void) makeFirst {
     ArrayInsecta * arrayInsecta = [[ArrayInsecta alloc]init];
     [arrayInsecta setDelegate:self];
     [arrayInsecta makeFirstArray];
-
-
-    
-    
 }
 
 //возвращает второй массив для таблички (обработанный методом makeAnotherArray из класса ArrayInsecta
-- (void) makeAnotherArray {
-
-    ArrayInsecta * arInsecta = [[ArrayInsecta alloc]init];
-    [arInsecta setDelegate:self];
-    [arInsecta makeAnotherArray];
-
+- (void) makeAnother {
+    ArrayInsecta * arrayInsecta = [[ArrayInsecta alloc]init];
+    [arrayInsecta setDelegate:self];
+    [arrayInsecta makeAnotherArray];
 }
 
 
@@ -82,15 +66,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.arrayM.count;
-
 }
 
 //здесь заполняем таблицу отряд-латиниское название:
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     static NSString * simpleTaibleIndefir = @"Cell";
     CustomTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:simpleTaibleIndefir];
-  
     cell.custum_labelValue.text = [[self.arrayM objectAtIndex:indexPath.row]objectForKey:@"value"];
     cell.custum_labelValueLat.text = [[self.arrayM objectAtIndex:indexPath.row]objectForKey:@"latvalue"];
  
@@ -121,37 +102,41 @@
 }
 
 
-
-
-
-- (IBAction)button_One:(id)sender {
-    [self.makeArrays makeFirstArray];
+//кнопка на данном вьюконтроллере, которая обновляет экран и загружает другую таблицу
+- (IBAction)push_One:(id)sender {
+    [self makeFirst]; //обращаемся к методу который загружает первую таблицу
+    
 }
 
-- (IBAction)button_Two:(id)sender {
-    [self.makeArrays makeAnotherArray];
+//кнопка на данном вьюконтроллере, которая обновляет экран и загружает другую таблицу
+- (IBAction)push_Two:(id)sender {
+    [self makeAnother]; //обращаемся к методу который загружает вторую таблицу
 }
 
 
 
 #pragma mark - ArrayInsectaDelegate
 
+//метод из протокола ArrayInsectaDelegate на загрузку первого массива:
 - (void) makeArraysFirstArrayReady:(ArrayInsecta*) makeArrays FirstArray:(NSMutableArray*) firstArray {
-    
-    [self.arrayM removeAllObjects];
-     self.arrayM = firstArray;
+    [self reloadTableView]; //перегружаем таблицу
+    [self.arrayM removeAllObjects]; // очищаем массив
+     self.arrayM = firstArray; //получаем таблицу по методу протокола
      self.isFirstArray = YES;
-    
-    
-    
-    
 }
+
+//метод из протокола ArrayInsectaDelegate на загрузку второго массива:
 - (void) makeArraysSecondArrayReady:(ArrayInsecta*) makeArrays SecondArray:(NSMutableArray*) secondArray {
-    
+    [self reloadTableView];
     [self.arrayM removeAllObjects];
      self.arrayM = secondArray;
      self.isFirstArray = NO;
-    
+}
+
+//метод, который перезагружает таблицу в текущем окне:
+- (void) reloadTableView {
+    dispatch_async(dispatch_get_main_queue(), ^{
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];});
 }
 
 

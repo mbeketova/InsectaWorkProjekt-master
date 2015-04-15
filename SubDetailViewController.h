@@ -10,15 +10,9 @@
 
 
 @interface SubDetailViewController : UIViewController
+
 @property (nonatomic, strong) NSMutableArray * arrayMSub;
-
 @property (nonatomic, assign) BOOL isFirstArray;
-
 @property (nonatomic, strong) NSString *string_MainValue;
-@property (nonatomic, strong) NSString *string_MainValueLat;
-@property (nonatomic, strong) NSString *string_textView;
-@property (nonatomic, strong) IBOutlet UILabel *label_MainValue;
-
-
 
 @end

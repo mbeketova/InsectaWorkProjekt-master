@@ -22,6 +22,24 @@
 		841A47681ADD632F001D13D9 /* Тли.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47631ADD632F001D13D9 /* Тли.jpg */; };
 		841A47691ADD632F001D13D9 /* Цикадовые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47641ADD632F001D13D9 /* Цикадовые.jpg */; };
 		841A476B1ADD6556001D13D9 /* Белокрылки.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A476A1ADD6556001D13D9 /* Белокрылки.jpg */; };
+		841A476D1ADE1B18001D13D9 /* блохи.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A476C1ADE1B18001D13D9 /* блохи.jpg */; };
+		841A477E1ADE1B40001D13D9 /* большекрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A476E1ADE1B40001D13D9 /* большекрылые.jpg */; };
+		841A477F1ADE1B40001D13D9 /* верблюдки.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A476F1ADE1B40001D13D9 /* верблюдки.jpg */; };
+		841A47801ADE1B40001D13D9 /* веснянки.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47701ADE1B40001D13D9 /* веснянки.jpg */; };
+		841A47811ADE1B40001D13D9 /* вши.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47711ADE1B40001D13D9 /* вши.jpg */; };
+		841A47821ADE1B40001D13D9 /* гемимериды.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47721ADE1B40001D13D9 /* гемимериды.jpg */; };
+		841A47831ADE1B40001D13D9 /* гриллоблаттиды.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47731ADE1B40001D13D9 /* гриллоблаттиды.jpg */; };
+		841A47851ADE1B40001D13D9 /* клопы.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47751ADE1B40001D13D9 /* клопы.jpg */; };
+		841A47861ADE1B40001D13D9 /* палочники.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47761ADE1B40001D13D9 /* палочники.jpg */; };
+		841A47871ADE1B40001D13D9 /* поденки.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47771ADE1B40001D13D9 /* поденки.jpg */; };
+		841A47881ADE1B40001D13D9 /* пухоеды.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47781ADE1B40001D13D9 /* пухоеды.jpg */; };
+		841A47891ADE1B40001D13D9 /* ручейники.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A47791ADE1B40001D13D9 /* ручейники.jpg */; };
+		841A478A1ADE1B40001D13D9 /* сеноеды.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A477A1ADE1B40001D13D9 /* сеноеды.jpg */; };
+		841A478B1ADE1B40001D13D9 /* стрепсиптера.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A477B1ADE1B40001D13D9 /* стрепсиптера.jpg */; };
+		841A478C1ADE1B40001D13D9 /* термиты.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A477C1ADE1B40001D13D9 /* термиты.jpg */; };
+		841A478D1ADE1B40001D13D9 /* эмбии.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A477D1ADE1B40001D13D9 /* эмбии.jpg */; };
+		841A47901ADE1C63001D13D9 /* зораптеры.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A478E1ADE1C63001D13D9 /* зораптеры.jpg */; };
+		841A47911ADE1C63001D13D9 /* скорпионовые мухи.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A478F1ADE1C63001D13D9 /* скорпионовые мухи.jpg */; };
 		84354C131AD7322100812782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C121AD7322100812782 /* main.m */; };
 		84354C161AD7322100812782 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C151AD7322100812782 /* AppDelegate.m */; };
 		84354C191AD7322100812782 /* InsectaWorkProjekt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84354C171AD7322100812782 /* InsectaWorkProjekt.xcdatamodeld */; };
@@ -97,6 +115,24 @@
 		841A47631ADD632F001D13D9 /* Тли.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Тли.jpg"; sourceTree = "<group>"; };
 		841A47641ADD632F001D13D9 /* Цикадовые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Цикадовые.jpg"; sourceTree = "<group>"; };
 		841A476A1ADD6556001D13D9 /* Белокрылки.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Белокрылки.jpg"; sourceTree = "<group>"; };
+		841A476C1ADE1B18001D13D9 /* блохи.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "блохи.jpg"; sourceTree = "<group>"; };
+		841A476E1ADE1B40001D13D9 /* большекрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "большекрылые.jpg"; sourceTree = "<group>"; };
+		841A476F1ADE1B40001D13D9 /* верблюдки.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "верблюдки.jpg"; sourceTree = "<group>"; };
+		841A47701ADE1B40001D13D9 /* веснянки.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "веснянки.jpg"; sourceTree = "<group>"; };
+		841A47711ADE1B40001D13D9 /* вши.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "вши.jpg"; sourceTree = "<group>"; };
+		841A47721ADE1B40001D13D9 /* гемимериды.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "гемимериды.jpg"; sourceTree = "<group>"; };
+		841A47731ADE1B40001D13D9 /* гриллоблаттиды.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "гриллоблаттиды.jpg"; sourceTree = "<group>"; };
+		841A47751ADE1B40001D13D9 /* клопы.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "клопы.jpg"; sourceTree = "<group>"; };
+		841A47761ADE1B40001D13D9 /* палочники.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "палочники.jpg"; sourceTree = "<group>"; };
+		841A47771ADE1B40001D13D9 /* поденки.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "поденки.jpg"; sourceTree = "<group>"; };
+		841A47781ADE1B40001D13D9 /* пухоеды.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "пухоеды.jpg"; sourceTree = "<group>"; };
+		841A47791ADE1B40001D13D9 /* ручейники.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ручейники.jpg"; sourceTree = "<group>"; };
+		841A477A1ADE1B40001D13D9 /* сеноеды.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "сеноеды.jpg"; sourceTree = "<group>"; };
+		841A477B1ADE1B40001D13D9 /* стрепсиптера.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "стрепсиптера.jpg"; sourceTree = "<group>"; };
+		841A477C1ADE1B40001D13D9 /* термиты.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "термиты.jpg"; sourceTree = "<group>"; };
+		841A477D1ADE1B40001D13D9 /* эмбии.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "эмбии.jpg"; sourceTree = "<group>"; };
+		841A478E1ADE1C63001D13D9 /* зораптеры.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "зораптеры.jpg"; sourceTree = "<group>"; };
+		841A478F1ADE1C63001D13D9 /* скорпионовые мухи.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "скорпионовые мухи.jpg"; sourceTree = "<group>"; };
 		84354C0D1AD7322100812782 /* InsectaWorkProjekt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsectaWorkProjekt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84354C111AD7322100812782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84354C121AD7322100812782 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -299,38 +335,56 @@
 				84354C731AD8DB7C00812782 /* бахромчатокрылые.jpg */,
 				841A476A1ADD6556001D13D9 /* Белокрылки.jpg */,
 				84354C681AD8A89A00812782 /* бессяжковые.jpg */,
+				841A476C1ADE1B18001D13D9 /* блохи.jpg */,
 				84354C741AD8DB7C00812782 /* богомолы.jpg */,
+				841A476E1ADE1B40001D13D9 /* большекрылые.jpg */,
+				841A476F1ADE1B40001D13D9 /* верблюдки.jpg */,
+				841A47701ADE1B40001D13D9 /* веснянки.jpg */,
+				841A47711ADE1B40001D13D9 /* вши.jpg */,
+				841A47721ADE1B40001D13D9 /* гемимериды.jpg */,
+				841A47731ADE1B40001D13D9 /* гриллоблаттиды.jpg */,
 				84354C751AD8DB7C00812782 /* двукрылые.jpg */,
 				84354C6A1AD8A8A800812782 /* двухвостые.jpg */,
 				841A474E1ADD6308001D13D9 /* Длинноусые двукрылые.jpg */,
 				841A474F1ADD6308001D13D9 /* Длинноусые прямокрылые.jpg */,
 				84354C761AD8DB7C00812782 /* жесткокрылые.jpg */,
+				841A478E1ADE1C63001D13D9 /* зораптеры.jpg */,
+				841A47751ADE1B40001D13D9 /* клопы.jpg */,
+				84354C7E1AD8DB7C00812782 /* кожистокрылые.jpg */,
 				841A47501ADD6308001D13D9 /* Кокциды.jpg */,
 				841A47511ADD6308001D13D9 /* Короткоусые двукрылые.jpg */,
 				841A475A1ADD631D001D13D9 /* Короткоусые прямокрылые.jpg */,
 				841A47521ADD6308001D13D9 /* Листоблошки.jpg */,
 				84354C6C1AD8A8B400812782 /* ногохвостки.jpg */,
+				841A47761ADE1B40001D13D9 /* палочники.jpg */,
 				8453B1A61ADB088D00CAFFBA /* первичнобезкрылые.jpg */,
 				84354C771AD8DB7C00812782 /* перепончатокрылые.jpg */,
 				841A47531ADD6308001D13D9 /* Плотоядные.jpg */,
+				841A47771ADE1B40001D13D9 /* поденки.jpg */,
 				84354C781AD8DB7C00812782 /* полужесткокрылые.jpg */,
 				84354C791AD8DB7C00812782 /* прямокрылые.jpg */,
+				841A47781ADE1B40001D13D9 /* пухоеды.jpg */,
 				841A475B1ADD631D001D13D9 /* Равнокрылые стрекозы.jpg */,
 				84354C7A1AD8DB7C00812782 /* равнокрылые.jpg */,
 				841A47601ADD632F001D13D9 /* Разнокрылые стрекозы.jpg */,
 				841A47611ADD632F001D13D9 /* Разноядные.jpg */,
+				841A47791ADE1B40001D13D9 /* ручейники.jpg */,
+				841A477A1ADE1B40001D13D9 /* сеноеды.jpg */,
 				84354C7B1AD8DB7C00812782 /* сетчатокрылые.jpg */,
 				841A47621ADD632F001D13D9 /* Сидячебрюхие.jpg */,
+				841A478F1ADE1C63001D13D9 /* скорпионовые мухи.jpg */,
 				841A475C1ADD631D001D13D9 /* Стебельчатобрюхие.jpg */,
 				84354C7C1AD8DB7C00812782 /* стрекозы.jpg */,
+				841A477B1ADE1B40001D13D9 /* стрепсиптера.jpg */,
 				84354C481AD7428C00812782 /* строение1.jpg */,
 				84354C4A1AD7432200812782 /* строение6.jpg */,
 				84354C7D1AD8DB7C00812782 /* тараканы.jpg */,
+				841A477C1ADE1B40001D13D9 /* термиты.jpg */,
 				841A47631ADD632F001D13D9 /* Тли.jpg */,
-				84354C7E1AD8DB7C00812782 /* кожистокрылые.jpg */,
 				841A47641ADD632F001D13D9 /* Цикадовые.jpg */,
 				84354C8B1AD8DB9300812782 /* чешуекрылые.jpg */,
 				84354C6E1AD8A8BC00812782 /* щетинохвостки.jpg */,
+				841A477D1ADE1B40001D13D9 /* эмбии.jpg */,
 			);
 			name = Image;
 			sourceTree = "<group>";
@@ -482,16 +536,23 @@
 				84354C811AD8DB7C00812782 /* двукрылые.jpg in Resources */,
 				84354C6B1AD8A8A800812782 /* двухвостые.jpg in Resources */,
 				84354C851AD8DB7C00812782 /* прямокрылые.jpg in Resources */,
+				841A47821ADE1B40001D13D9 /* гемимериды.jpg in Resources */,
 				841A47571ADD6308001D13D9 /* Короткоусые двукрылые.jpg in Resources */,
 				84354C1F1AD7322100812782 /* Main.storyboard in Resources */,
 				84354C881AD8DB7C00812782 /* стрекозы.jpg in Resources */,
 				84354C871AD8DB7C00812782 /* сетчатокрылые.jpg in Resources */,
+				841A47871ADE1B40001D13D9 /* поденки.jpg in Resources */,
 				841A47561ADD6308001D13D9 /* Кокциды.jpg in Resources */,
 				84354C841AD8DB7C00812782 /* полужесткокрылые.jpg in Resources */,
 				8453B1851AD9881200CAFFBA /* 1295432XU3U0-342A.jpg in Resources */,
 				84354C491AD7428C00812782 /* строение1.jpg in Resources */,
+				841A47911ADE1C63001D13D9 /* скорпионовые мухи.jpg in Resources */,
+				841A47861ADE1B40001D13D9 /* палочники.jpg in Resources */,
+				841A47891ADE1B40001D13D9 /* ручейники.jpg in Resources */,
+				841A47901ADE1C63001D13D9 /* зораптеры.jpg in Resources */,
 				84354C241AD7322100812782 /* LaunchScreen.xib in Resources */,
 				84354C211AD7322100812782 /* Images.xcassets in Resources */,
+				841A47831ADE1B40001D13D9 /* гриллоблаттиды.jpg in Resources */,
 				84354C691AD8A89A00812782 /* бессяжковые.jpg in Resources */,
 				8453B1871AD99BAA00CAFFBA /* icon-arrow_prev.png in Resources */,
 				84354C801AD8DB7C00812782 /* богомолы.jpg in Resources */,
@@ -499,7 +560,10 @@
 				84354C821AD8DB7C00812782 /* жесткокрылые.jpg in Resources */,
 				8453B1891AD99BB800CAFFBA /* siguiente.png in Resources */,
 				841A47691ADD632F001D13D9 /* Цикадовые.jpg in Resources */,
+				841A477F1ADE1B40001D13D9 /* верблюдки.jpg in Resources */,
+				841A47811ADE1B40001D13D9 /* вши.jpg in Resources */,
 				84354C4B1AD7432200812782 /* строение6.jpg in Resources */,
+				841A47881ADE1B40001D13D9 /* пухоеды.jpg in Resources */,
 				841A47651ADD632F001D13D9 /* Разнокрылые стрекозы.jpg in Resources */,
 				841A47581ADD6308001D13D9 /* Листоблошки.jpg in Resources */,
 				84354C861AD8DB7C00812782 /* равнокрылые.jpg in Resources */,
@@ -509,16 +573,24 @@
 				841A47661ADD632F001D13D9 /* Разноядные.jpg in Resources */,
 				84354C8C1AD8DB9300812782 /* чешуекрылые.jpg in Resources */,
 				84354C6D1AD8A8B400812782 /* ногохвостки.jpg in Resources */,
+				841A47851ADE1B40001D13D9 /* клопы.jpg in Resources */,
 				84354C471AD736BF00812782 /* fauna_cikada.gif in Resources */,
+				841A47801ADE1B40001D13D9 /* веснянки.jpg in Resources */,
+				841A477E1ADE1B40001D13D9 /* большекрылые.jpg in Resources */,
 				8453B1A71ADB088D00CAFFBA /* первичнобезкрылые.jpg in Resources */,
 				8453B1831AD9800100CAFFBA /* бабочки.png in Resources */,
+				841A478A1ADE1B40001D13D9 /* сеноеды.jpg in Resources */,
 				841A47591ADD6308001D13D9 /* Плотоядные.jpg in Resources */,
+				841A478B1ADE1B40001D13D9 /* стрепсиптера.jpg in Resources */,
 				841A475F1ADD631D001D13D9 /* Стебельчатобрюхие.jpg in Resources */,
 				841A47551ADD6308001D13D9 /* Длинноусые прямокрылые.jpg in Resources */,
+				841A478C1ADE1B40001D13D9 /* термиты.jpg in Resources */,
 				841A476B1ADD6556001D13D9 /* Белокрылки.jpg in Resources */,
 				841A475D1ADD631D001D13D9 /* Короткоусые прямокрылые.jpg in Resources */,
 				841A475E1ADD631D001D13D9 /* Равнокрылые стрекозы.jpg in Resources */,
 				84354C8A1AD8DB7C00812782 /* кожистокрылые.jpg in Resources */,
+				841A478D1ADE1B40001D13D9 /* эмбии.jpg in Resources */,
+				841A476D1ADE1B18001D13D9 /* блохи.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

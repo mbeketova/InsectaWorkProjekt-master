@@ -245,16 +245,6 @@
                                 <rect key="frame" x="0.0" y="536" width="320" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kfy-f0-Fpf">
-                                        <rect key="frame" x="205" y="0.0" width="107" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="крылоносные">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="button_Two:" destination="D65-86-aei" eventType="touchUpInside" id="8mz-Ee-Y9f"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hpk-cs-zYs">
                                         <rect key="frame" x="8" y="0.0" width="88" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -262,7 +252,17 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="button_One:" destination="D65-86-aei" eventType="touchUpInside" id="YT3-27-hi7"/>
+                                            <action selector="push_One:" destination="D65-86-aei" eventType="touchUpInside" id="HqJ-3w-Dkt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kfy-f0-Fpf">
+                                        <rect key="frame" x="205" y="0.0" width="107" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="крылоносные">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="push_Two:" destination="D65-86-aei" eventType="touchUpInside" id="kz8-f6-DvF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -273,9 +273,8 @@
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yMA-Ir-RZk"/>
                     <connections>
-                        <outlet property="button_one" destination="hpk-cs-zYs" id="0yS-Qe-Mc9"/>
-                        <outlet property="button_two" destination="kfy-f0-Fpf" id="2Cl-fA-ej3"/>
                         <outlet property="tableView" destination="1Ht-Ng-R9g" id="S7S-nK-vQB"/>
                     </connections>
                 </viewController>

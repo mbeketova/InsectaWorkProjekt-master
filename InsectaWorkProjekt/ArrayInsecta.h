@@ -8,20 +8,31 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol ArrayInsectaDelegate;
+
 @interface ArrayInsecta : NSObject
 
 
-+ (NSMutableArray *) makeFirstArray;
-+ (NSMutableArray *) makeAnotherArray;
-
 + (NSMutableArray *) makeSubArrayDiptera;
 + (NSMutableArray *) makeSubArrayHomoptera;
-
 + (NSMutableArray *) makeSubArrayColeoptera;
 + (NSMutableArray *) makeSubArrayOdonatoptera;
 + (NSMutableArray *) makeSubArrayOrthoptera;
 + (NSMutableArray *) makeSubArrayHymenoptera;
 
+@property (weak, nonatomic) id <ArrayInsectaDelegate> delegate;
+
+@end
+
+@protocol ArrayInsectaDelegate <NSObject>
+
+@required
+
+- (void) makeArraysFirstArrayReady:(ArrayInsecta*) makeArrays FirstArray:(NSMutableArray*) firstArray;
+- (void) makeArraysSecondArrayReady:(ArrayInsecta*) makeArrays SecondArray:(NSMutableArray*) secondArray;
+
+//@optional
+//- сюда запишем остальные таблицы для реализации Подотрядов
 
 
 @end

@@ -56,7 +56,7 @@
 		84354C871AD8DB7C00812782 /* сетчатокрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C7B1AD8DB7C00812782 /* сетчатокрылые.jpg */; };
 		84354C881AD8DB7C00812782 /* стрекозы.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C7C1AD8DB7C00812782 /* стрекозы.jpg */; };
 		84354C891AD8DB7C00812782 /* тараканы.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C7D1AD8DB7C00812782 /* тараканы.jpg */; };
-		84354C8A1AD8DB7C00812782 /* уховертки.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C7E1AD8DB7C00812782 /* уховертки.jpg */; };
+		84354C8A1AD8DB7C00812782 /* кожистокрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C7E1AD8DB7C00812782 /* кожистокрылые.jpg */; };
 		84354C8C1AD8DB9300812782 /* чешуекрылые.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84354C8B1AD8DB9300812782 /* чешуекрылые.jpg */; };
 		8453B1831AD9800100CAFFBA /* бабочки.png in Resources */ = {isa = PBXBuildFile; fileRef = 8453B1821AD9800100CAFFBA /* бабочки.png */; };
 		8453B1851AD9881200CAFFBA /* 1295432XU3U0-342A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453B1841AD9881200CAFFBA /* 1295432XU3U0-342A.jpg */; };
@@ -141,7 +141,7 @@
 		84354C7B1AD8DB7C00812782 /* сетчатокрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "сетчатокрылые.jpg"; sourceTree = "<group>"; };
 		84354C7C1AD8DB7C00812782 /* стрекозы.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "стрекозы.jpg"; sourceTree = "<group>"; };
 		84354C7D1AD8DB7C00812782 /* тараканы.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "тараканы.jpg"; sourceTree = "<group>"; };
-		84354C7E1AD8DB7C00812782 /* уховертки.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "уховертки.jpg"; sourceTree = "<group>"; };
+		84354C7E1AD8DB7C00812782 /* кожистокрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "кожистокрылые.jpg"; sourceTree = "<group>"; };
 		84354C8B1AD8DB9300812782 /* чешуекрылые.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "чешуекрылые.jpg"; sourceTree = "<group>"; };
 		8453B1821AD9800100CAFFBA /* бабочки.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "бабочки.png"; sourceTree = "<group>"; };
 		8453B1841AD9881200CAFFBA /* 1295432XU3U0-342A.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1295432XU3U0-342A.jpg"; sourceTree = "<group>"; };
@@ -327,7 +327,7 @@
 				84354C4A1AD7432200812782 /* строение6.jpg */,
 				84354C7D1AD8DB7C00812782 /* тараканы.jpg */,
 				841A47631ADD632F001D13D9 /* Тли.jpg */,
-				84354C7E1AD8DB7C00812782 /* уховертки.jpg */,
+				84354C7E1AD8DB7C00812782 /* кожистокрылые.jpg */,
 				841A47641ADD632F001D13D9 /* Цикадовые.jpg */,
 				84354C8B1AD8DB9300812782 /* чешуекрылые.jpg */,
 				84354C6E1AD8A8BC00812782 /* щетинохвостки.jpg */,
@@ -518,7 +518,7 @@
 				841A476B1ADD6556001D13D9 /* Белокрылки.jpg in Resources */,
 				841A475D1ADD631D001D13D9 /* Короткоусые прямокрылые.jpg in Resources */,
 				841A475E1ADD631D001D13D9 /* Равнокрылые стрекозы.jpg in Resources */,
-				84354C8A1AD8DB7C00812782 /* уховертки.jpg in Resources */,
+				84354C8A1AD8DB7C00812782 /* кожистокрылые.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

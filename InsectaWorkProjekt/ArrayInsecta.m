@@ -16,7 +16,7 @@
 //-------------------------------------------------------------------------------------------------------------------------------------------
 
 
-+ (NSMutableArray *) makeFirstArray {
+- (void) makeFirstArray {
     
 //создаем массив по безкрылым:
 
@@ -44,26 +44,31 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
     NSMutableArray * arrayM = [[NSMutableArray alloc]init];
 
 //данный цикл записывает в коллекцию значения из массива arrayValue и соответствующие ему значения из массива arrayValueLat, arrayDescript  пока не закончатся элементы в массиве arrayValue:
+    
+    __block int i = 0;
+    
+    [arrayValue enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
+        [dict setObject:[arrayValue objectAtIndex:idx] forKey:@"value"];
+        [dict setObject:[arrayValueLat objectAtIndex:idx] forKey:@"latvalue"];
+        [dict setObject:[arrayDescript objectAtIndex:idx] forKey:@"discr"];
+        
+        [arrayM addObject:dict];
+        i++;
+        if (stop && i == arrayValue.count) {
+            [self.delegate makeArraysFirstArrayReady:self FirstArray:arrayM];
+        }
 
-    for (int i = 0; i < arrayValue.count; i++) {
+    }];
     
-    NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
-    [dict setObject:[arrayValue objectAtIndex:i] forKey:@"value"];
-    [dict setObject:[arrayValueLat objectAtIndex:i] forKey:@"latvalue"];
-    [dict setObject:[arrayDescript objectAtIndex:i] forKey:@"discr"];
-    
-    
-    [arrayM addObject:dict];
-    
-    
-    }
+
 
     //здесь сортируем массив по названию:
     NSSortDescriptor * sorter = [[NSSortDescriptor alloc] initWithKey:@"value" ascending:YES];
     NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
     [arrayM sortUsingDescriptors:descriptors];
     
-    return arrayM;
+
 
 }
 
@@ -72,13 +77,13 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
 
 
 
-+ (NSMutableArray *) makeAnotherArray {
+- (void) makeAnotherArray {
     
 //создаем массив по крылоносным:
 
     
-    NSString * stringValue = @"двукрылые, чешуекрылые, бахромчатокрылые, равнокрылые, полужесткокрылые, уховертки, жесткокрылые, стрекозы, прямокрылые, богомолы, тараканы, перепончатокрылые, сетчатокрылые";
-    NSString * stringValueLat = @"Diptera, Lepidoptera, Thysanoptera, Homoptera, Hemiptera, Dermaptera, Coleoptera, Odonatoptera, Orthoptera, Mantoptera, Blattoptera, Hymenoptera, Neuroptera";
+    NSString * stringValue = @"двукрылые, чешуекрылые, бахромчатокрылые, равнокрылые, полужесткокрылые, кожистокрылые, жесткокрылые, стрекозы, прямокрылые, богомолы, тараканы, перепончатокрылые, сетчатокрылые, поденки, термиты, веснянки, эмбии, гриллоблаттиды, палочники, гемимериды, зораптеры, сеноеды, пухоеды, вши, клопы, стрепсиптера, верблюдки, большекрылые, скорпионовые мухи, ручейники, блохи";
+    NSString * stringValueLat = @"Diptera, Lepidoptera, Thysanoptera, Homoptera, Hemiptera, Dermaptera, Coleoptera, Odonatoptera, Orthoptera, Mantoptera, Blattoptera, Hymenoptera, Neuroptera, Ephemeroptera, Isoptera, Plecoptera, Embioptera, Grylloblattida, Phasmatiptera, Hemimerida, Zoraptera, Psocoprtera, Mallophaga, Anoplura, Hemiptera, Strepsiptera, Raphidioptera, Megaloptera, Mecoptera, Trichoptera, Aphaniptera";
     
     //заносим в массив значения из строки без символов запятая и пробел:
     
@@ -88,17 +93,25 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
     
     //данный цикл записывает в коллекцию значения из массива arrayValue и соответствующие ему значения из массива arrayValueLat, пока не закончатся элементы в массиве arrayPrice:
     
-    for (int i = 0; i < arrayValue.count; i++) {
-        
-        NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
-        [dict setObject:[arrayValue objectAtIndex:i] forKey:@"value"];
-        [dict setObject:[arrayValueLat objectAtIndex:i] forKey:@"latvalue"];
-//      [dict setObject:[self.arrayDescript objectAtIndex:i] forKey:@"discr"]; - добавить, когда внесу описания
     
+    __block int i = 0;
+    
+    [arrayValueLat enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+      
+        NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
+        [dict setObject:[arrayValue objectAtIndex:idx] forKey:@"value"];
+        [dict setObject:[arrayValueLat objectAtIndex:idx] forKey:@"latvalue"];
+        //      [dict setObject:[self.arrayDescript objectAtIndex:i] forKey:@"discr"]; - добавить, когда внесу описания
+        
         [arrayM addObject:dict];
         
-        
-    }
+        i++;
+        if (stop && i == arrayValueLat.count) {
+            [self.delegate makeArraysSecondArrayReady:self SecondArray:arrayM];
+        }
+    }];
+    
+
     
    
     
@@ -107,8 +120,7 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
     NSArray * descriptors = [NSArray arrayWithObjects:sorter, nil];
     [arrayM sortUsingDescriptors:descriptors];
 
-   
-    return arrayM;
+
 }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
 

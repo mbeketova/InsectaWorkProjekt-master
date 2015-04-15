@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ArrayInsecta.h"
 
 
-
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, ArrayInsectaDelegate>
 
 @property (nonatomic, strong) NSMutableArray * arrayM;
-@property (nonatomic, strong) NSMutableArray * arrayMSub;
 @property (nonatomic, assign) BOOL isFirstArray;
+
+
 
 @end
 

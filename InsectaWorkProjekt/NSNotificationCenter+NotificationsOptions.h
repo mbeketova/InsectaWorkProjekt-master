@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "ViewController.h" - почему-то без этого объявления у меня программа падает и в упор не видит UIViewController
+#import <UIKit/UIKit.h>
+
 
 @interface NSNotificationCenter (NotificationsOptions)
 

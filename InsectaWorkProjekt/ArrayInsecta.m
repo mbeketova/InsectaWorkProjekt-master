@@ -57,9 +57,10 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
         i++;
         if (stop && i == arrayValue.count) {
             
-  //          [self.delegate makeArraysFirstArrayReady:self FirstArray:arrayM];
+           [self.delegate makeArraysFirstArrayReady:self FirstArray:arrayM];
             NSDictionary * dict = [[NSDictionary alloc]initWithObjectsAndKeys: arrayM, ARRAY_KEY, nil];
             [NSNotificationCenter call_Notif:ARRAY_NOTIF Dictionary:dict];
+            
         }
 
     }];
@@ -112,6 +113,8 @@ NSString * stringThysanura = @"Отряд первичнобескрылых н�
         if (stop && i == arrayValueLat.count) {
             
             [self.delegate makeArraysSecondArrayReady:self SecondArray:arrayM];
+            NSDictionary * dict = [[NSDictionary alloc]initWithObjectsAndKeys: arrayM, ARRAY_KEY, nil];
+            [NSNotificationCenter call_Notif:ARRAY_NOTIF Dictionary:dict];
         }
     }];
     

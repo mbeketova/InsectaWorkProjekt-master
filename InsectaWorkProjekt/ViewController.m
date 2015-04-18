@@ -17,7 +17,7 @@
 
 
 
-//Ипользовала эту работу как домашнее задание к 6 уроку
+//Ипользовала эту работу как домашнее задание к 7 уроку
 
 
 @interface ViewController ()
@@ -32,20 +32,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.isFirstArray = YES;
     self.arrayM = [[NSMutableArray alloc]init];
     self.arrayInsecta = [ArrayInsecta new];
-    self.arrayInsecta.delegate = self;
-    
 
-//производим выбор метода при нажатии кнопок:
-//    if (self.isFirstArray) {
-//        [self makeFirst];
-//    }
-//    else {
-//        [self makeAnother];
-//    }
+    
+    if (self.isFirstArray) {
+        [self makeFirst];
+    }
+    else {
+        [self makeAnother];
+    }
+    
+    
    
+}
+
+
+- (void) makeFirst {
+    ArrayInsecta * arrayInsecta = [[ArrayInsecta alloc]init];
+    [arrayInsecta setDelegate:self];
+    [arrayInsecta makeFirstArray];
+}
+
+
+- (void) makeAnother {
+    ArrayInsecta * arrayInsecta = [[ArrayInsecta alloc]init];
+    [arrayInsecta setDelegate:self];
+    [arrayInsecta makeAnotherArray];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -56,11 +70,11 @@
 
 - (void)viewWillDisappear:(BOOL)animated{
     
-    [NSNotificationCenter delete_Notif];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    //пришлось вставить вот так грубо, а не через категорию, т.к. метод видит, но не срабатывает... чудеса!
 }
 
-
-//возвращает первый массив для таблички (обработанный методом makeFirstArray из класса ArrayInsecta
+//возвращает первый массив для таблички (обработанный методом makeFirstArray из класса ArrayInsecta - при нажатии на кнопку "безкрылые" на текущей странице
 - (void) makeFirstArray:(NSNotification*)notification {
 
     
@@ -69,13 +83,18 @@
 
         self.isFirstArray = YES;
         [self reloadTableView]; //перегружаем таблицу
+
 }
 
-//возвращает второй массив для таблички (обработанный методом makeAnotherArray из класса ArrayInsecta
-- (void) makeAnotherArray {
-//    ArrayInsecta * arrayInsecta = [[ArrayInsecta alloc]init];
-//    [arrayInsecta setDelegate:self];
-//    [arrayInsecta makeAnotherArray];
+//возвращает второй массив для таблички (обработанный методом makeFirstArray из класса ArrayInsecta - при нажатии на кнопку "безкрылые" на текущей странице
+- (void) makeAnotherArray:(NSNotification*)notification {
+    
+    [self.arrayM removeAllObjects]; // очищаем массив
+    self.arrayM = [notification.userInfo objectForKey: ARRAY_KEY];
+    
+    self.isFirstArray = NO;
+    [self reloadTableView]; //перегружаем таблицу
+
 }
 
 
@@ -122,36 +141,37 @@
 }
 
 
-//кнопка на данном вьюконтроллере, которая обновляет экран и загружает другую таблицу
+//кнопка на текущем вьюконтроллере, которая обновляет экран и загружает таблицу с бескрылыми
 - (IBAction)push_One:(id)sender {
     [self.arrayInsecta makeFirstArray]; //обращаемся к методу который загружает первую таблицу
+ 
     
 }
 
-//кнопка на данном вьюконтроллере, которая обновляет экран и загружает другую таблицу
+//кнопка на данном вьюконтроллере, которая обновляет экран и загружает таблицу с крылатыми
 - (IBAction)push_Two:(id)sender {
-//    [self.arrayInsecta makeAnotherArray]; //обращаемся к методу который загружает вторую таблицу
+    [self.arrayInsecta makeAnotherArray]; //обращаемся к методу который загружает вторую таблицу
 }
 
 
+#pragma mark - ArrayInsectaDelegate
 
-//#pragma mark - ArrayInsectaDelegate
-//
-////метод из протокола ArrayInsectaDelegate на загрузку первого массива:
-//- (void) makeArraysFirstArrayReady:(ArrayInsecta*) makeArrays FirstArray:(NSMutableArray*) firstArray {
-//    [self reloadTableView]; //перегружаем таблицу
-//    [self.arrayM removeAllObjects]; // очищаем массив
-//     self.arrayM = firstArray; //получаем таблицу по методу протокола
-//     self.isFirstArray = YES;
-//}
-//
-////метод из протокола ArrayInsectaDelegate на загрузку второго массива:
-//- (void) makeArraysSecondArrayReady:(ArrayInsecta*) makeArrays SecondArray:(NSMutableArray*) secondArray {
-//    [self reloadTableView];
-//    [self.arrayM removeAllObjects];
-//     self.arrayM = secondArray;
-//     self.isFirstArray = NO;
-//}
+//метод из протокола ArrayInsectaDelegate на загрузку первого массива:
+- (void) makeArraysFirstArrayReady:(ArrayInsecta*) makeArrays FirstArray:(NSMutableArray*) firstArray {
+
+    [self.arrayM removeAllObjects]; // очищаем массив
+     self.arrayM = firstArray; //получаем таблицу по методу протокола
+    [self reloadTableView]; //перегружаем таблицу
+
+}
+
+//метод из протокола ArrayInsectaDelegate на загрузку второго массива:
+- (void) makeArraysSecondArrayReady:(ArrayInsecta*) makeArrays SecondArray:(NSMutableArray*) secondArray {
+    [self.arrayM removeAllObjects];
+    self.arrayM = secondArray;
+    [self reloadTableView];
+}
+
 
 //метод, который перезагружает таблицу в текущем окне:
 - (void) reloadTableView {

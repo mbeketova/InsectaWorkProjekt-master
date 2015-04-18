@@ -1,0 +1,20 @@
+//
+//  InsectaWorkProjectPrefixHeader.pch
+//  InsectaWorkProjekt
+//
+//  Created by Admin on 18.04.15.
+//  Copyright (c) 2015 Mariya Beketova. All rights reserved.
+//
+
+#ifndef InsectaWorkProjekt_InsectaWorkProjectPrefixHeader_pch
+#define InsectaWorkProjekt_InsectaWorkProjectPrefixHeader_pch
+
+#import "AppConstans.h"
+#import "NSNotificationCenter+NotificationsOptions.h"
+
+
+
+
+#endif
+
+

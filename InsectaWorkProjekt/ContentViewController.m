@@ -30,16 +30,14 @@
     [self.button_inform addTarget:self action:@selector(go_inform) forControlEvents:UIControlEventTouchUpInside];
     [self.button_struct addTarget:self action:@selector(go_struct) forControlEvents:UIControlEventTouchUpInside];
     [self.button_klass addTarget:self action:@selector(go_klass) forControlEvents:UIControlEventTouchUpInside];
- //   [self.button_detect addTarget:self action:@selector(go_Another) forControlEvents:UIControlEventTouchUpInside];
+    [self.button_detect addTarget:self action:@selector(go_determinant) forControlEvents:UIControlEventTouchUpInside];
  //   [self.button_prog addTarget:self action:@selector(go_Another) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
-//метод на срабатывание первой кнопки:
+//метод на срабатывание первой кнопки - переход в "Общая информация":
 - (void) go_inform {
-    
-
-    
+ 
     InformationViewController * view = [self.storyboard instantiateViewControllerWithIdentifier:@"inform"];
     [self.navigationController pushViewController:view animated:YES];
     
@@ -47,9 +45,8 @@
     
 }
 
-//метод на срабатывание второй кнопки:
+//метод на срабатывание второй кнопки - переход в строение насекомых:
 - (void) go_struct {
-    
 
     
     StructureViewController * view = [self.storyboard instantiateViewControllerWithIdentifier:@"struct"];
@@ -58,14 +55,20 @@
 }
     
 
+//метод на срабатывание третьей кнопки - переход в выбор подкласса (безкрылые или крылоносные)
 - (void) go_klass {
-        
-
-        
+    
     MenuViewController * view = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
     [self.navigationController pushViewController:view animated:YES];
-        
+   
+}
 
+
+//метод на срабатывание четвертой кнопки - переход в выбор определителя
+- (void) go_determinant {
+    
+    DeterninantViewController * view = [self.storyboard instantiateViewControllerWithIdentifier:@"determinant"];
+    [self.navigationController pushViewController:view animated:YES];
     
 }
 

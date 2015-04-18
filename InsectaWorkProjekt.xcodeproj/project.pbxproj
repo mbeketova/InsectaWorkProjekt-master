@@ -40,6 +40,9 @@
 		841A478D1ADE1B40001D13D9 /* эмбии.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A477D1ADE1B40001D13D9 /* эмбии.jpg */; };
 		841A47901ADE1C63001D13D9 /* зораптеры.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A478E1ADE1C63001D13D9 /* зораптеры.jpg */; };
 		841A47911ADE1C63001D13D9 /* скорпионовые мухи.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841A478F1ADE1C63001D13D9 /* скорпионовые мухи.jpg */; };
+		841A47CA1ADEFD37001D13D9 /* DeterninantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A47C91ADEFD37001D13D9 /* DeterninantViewController.m */; };
+		841A47CD1ADEFFC8001D13D9 /* GrownDeterninantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A47CC1ADEFFC8001D13D9 /* GrownDeterninantViewController.m */; };
+		841A47D51AE2627A001D13D9 /* NSNotificationCenter+NotificationsOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A47D41AE2627A001D13D9 /* NSNotificationCenter+NotificationsOptions.m */; };
 		84354C131AD7322100812782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C121AD7322100812782 /* main.m */; };
 		84354C161AD7322100812782 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354C151AD7322100812782 /* AppDelegate.m */; };
 		84354C191AD7322100812782 /* InsectaWorkProjekt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84354C171AD7322100812782 /* InsectaWorkProjekt.xcdatamodeld */; };
@@ -133,6 +136,14 @@
 		841A477D1ADE1B40001D13D9 /* эмбии.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "эмбии.jpg"; sourceTree = "<group>"; };
 		841A478E1ADE1C63001D13D9 /* зораптеры.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "зораптеры.jpg"; sourceTree = "<group>"; };
 		841A478F1ADE1C63001D13D9 /* скорпионовые мухи.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "скорпионовые мухи.jpg"; sourceTree = "<group>"; };
+		841A47C81ADEFD37001D13D9 /* DeterninantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeterninantViewController.h; path = InsectaWorkProjekt/DeterninantViewController.h; sourceTree = "<group>"; };
+		841A47C91ADEFD37001D13D9 /* DeterninantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeterninantViewController.m; path = InsectaWorkProjekt/DeterninantViewController.m; sourceTree = "<group>"; };
+		841A47CB1ADEFFC8001D13D9 /* GrownDeterninantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrownDeterninantViewController.h; path = InsectaWorkProjekt/GrownDeterninantViewController.h; sourceTree = "<group>"; };
+		841A47CC1ADEFFC8001D13D9 /* GrownDeterninantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrownDeterninantViewController.m; path = InsectaWorkProjekt/GrownDeterninantViewController.m; sourceTree = "<group>"; };
+		841A47CE1AE1D074001D13D9 /* AppConstans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstans.h; sourceTree = "<group>"; };
+		841A47CF1AE1D1C5001D13D9 /* InsectaWorkProjectPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsectaWorkProjectPrefixHeader.pch; sourceTree = "<group>"; };
+		841A47D31AE2627A001D13D9 /* NSNotificationCenter+NotificationsOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+NotificationsOptions.h"; path = "InsectaWorkProjekt/NSNotificationCenter+NotificationsOptions.h"; sourceTree = "<group>"; };
+		841A47D41AE2627A001D13D9 /* NSNotificationCenter+NotificationsOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+NotificationsOptions.m"; path = "InsectaWorkProjekt/NSNotificationCenter+NotificationsOptions.m"; sourceTree = "<group>"; };
 		84354C0D1AD7322100812782 /* InsectaWorkProjekt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsectaWorkProjekt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84354C111AD7322100812782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84354C121AD7322100812782 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -220,9 +231,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841A47C71ADEFCD3001D13D9 /* DeterminantView */ = {
+			isa = PBXGroup;
+			children = (
+				841A47CB1ADEFFC8001D13D9 /* GrownDeterninantViewController.h */,
+				841A47CC1ADEFFC8001D13D9 /* GrownDeterninantViewController.m */,
+				841A47C81ADEFD37001D13D9 /* DeterninantViewController.h */,
+				841A47C91ADEFD37001D13D9 /* DeterninantViewController.m */,
+			);
+			name = DeterminantView;
+			sourceTree = "<group>";
+		};
 		84354C041AD7322100812782 = {
 			isa = PBXGroup;
 			children = (
+				841A47D31AE2627A001D13D9 /* NSNotificationCenter+NotificationsOptions.h */,
+				841A47D41AE2627A001D13D9 /* NSNotificationCenter+NotificationsOptions.m */,
+				841A47CF1AE1D1C5001D13D9 /* InsectaWorkProjectPrefixHeader.pch */,
+				841A47CE1AE1D074001D13D9 /* AppConstans.h */,
+				841A47C71ADEFCD3001D13D9 /* DeterminantView */,
 				84C15C271ADC7ED10042C024 /* InsectaNew */,
 				8453B1991AD9BFFB00CAFFBA /* InformView */,
 				8453B1981AD9BFED00CAFFBA /* EntryView */,
@@ -614,14 +641,17 @@
 				84354C661AD89E1E00812782 /* CustomTableViewCell.m in Sources */,
 				84354C191AD7322100812782 /* InsectaWorkProjekt.xcdatamodeld in Sources */,
 				84354C721AD8B63B00812782 /* MenuViewController.m in Sources */,
+				841A47CD1ADEFFC8001D13D9 /* GrownDeterninantViewController.m in Sources */,
 				8453B1B01ADB2CE400CAFFBA /* SubDetailViewController.m in Sources */,
 				8453B18C1AD9A42600CAFFBA /* EntryViewController.m in Sources */,
 				84354C1C1AD7322100812782 /* ViewController.m in Sources */,
 				8453B18F1AD9A4E200CAFFBA /* ContentViewController.m in Sources */,
 				8453B1951AD9A62800CAFFBA /* StructureViewController.m in Sources */,
 				84354C131AD7322100812782 /* main.m in Sources */,
+				841A47CA1ADEFD37001D13D9 /* DeterninantViewController.m in Sources */,
 				84354C5F1AD880B100812782 /* ArrayInsecta.m in Sources */,
 				84354C581AD7EC4B00812782 /* DatailViewController.m in Sources */,
+				841A47D51AE2627A001D13D9 /* NSNotificationCenter+NotificationsOptions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,6 +716,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/Lesson_7/InsectaWorkProjectPrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -727,6 +759,8 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/Lesson_7/InsectaWorkProjectPrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -745,6 +779,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/Lesson_7/InsectaWorkProjectPrefixHeader.pch;
 				INFOPLIST_FILE = InsectaWorkProjekt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -755,6 +791,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/Lesson_7/InsectaWorkProjectPrefixHeader.pch;
 				INFOPLIST_FILE = InsectaWorkProjekt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

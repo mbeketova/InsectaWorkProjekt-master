@@ -10,6 +10,7 @@
 #import "InformationViewController.h"
 #import "StructureViewController.h"
 #import "MenuViewController.h"
+#import "DeterninantViewController.h"
 
 
 @interface ContentViewController : UIViewController

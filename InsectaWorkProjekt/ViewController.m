@@ -16,6 +16,7 @@
 
 
 
+
 //Ипользовала эту работу как домашнее задание к 6 уроку
 
 
@@ -31,31 +32,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.isFirstArray = YES;
     self.arrayM = [[NSMutableArray alloc]init];
+    self.arrayInsecta = [ArrayInsecta new];
+    self.arrayInsecta.delegate = self;
+    
 
 //производим выбор метода при нажатии кнопок:
-    if (self.isFirstArray) {
-        [self makeFirst];
-    }
-    else {
-        [self makeAnother];
-    }
+//    if (self.isFirstArray) {
+//        [self makeFirst];
+//    }
+//    else {
+//        [self makeAnother];
+//    }
+   
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [NSNotificationCenter set_Notif:ARRAY_NOTIF Selector:@selector(makeFirstArray:) Object:self];
+
     
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    
+    [NSNotificationCenter delete_Notif];
 }
 
 
 //возвращает первый массив для таблички (обработанный методом makeFirstArray из класса ArrayInsecta
-- (void) makeFirst {
-    ArrayInsecta * arrayInsecta = [[ArrayInsecta alloc]init];
-    [arrayInsecta setDelegate:self];
-    [arrayInsecta makeFirstArray];
+- (void) makeFirstArray:(NSNotification*)notification {
+
+    
+       [self.arrayM removeAllObjects]; // очищаем массив
+        self.arrayM = [notification.userInfo objectForKey: ARRAY_KEY];
+
+        self.isFirstArray = YES;
+        [self reloadTableView]; //перегружаем таблицу
 }
 
 //возвращает второй массив для таблички (обработанный методом makeAnotherArray из класса ArrayInsecta
-- (void) makeAnother {
-    ArrayInsecta * arrayInsecta = [[ArrayInsecta alloc]init];
-    [arrayInsecta setDelegate:self];
-    [arrayInsecta makeAnotherArray];
+- (void) makeAnotherArray {
+//    ArrayInsecta * arrayInsecta = [[ArrayInsecta alloc]init];
+//    [arrayInsecta setDelegate:self];
+//    [arrayInsecta makeAnotherArray];
 }
 
 
@@ -104,34 +124,34 @@
 
 //кнопка на данном вьюконтроллере, которая обновляет экран и загружает другую таблицу
 - (IBAction)push_One:(id)sender {
-    [self makeFirst]; //обращаемся к методу который загружает первую таблицу
+    [self.arrayInsecta makeFirstArray]; //обращаемся к методу который загружает первую таблицу
     
 }
 
 //кнопка на данном вьюконтроллере, которая обновляет экран и загружает другую таблицу
 - (IBAction)push_Two:(id)sender {
-    [self makeAnother]; //обращаемся к методу который загружает вторую таблицу
+//    [self.arrayInsecta makeAnotherArray]; //обращаемся к методу который загружает вторую таблицу
 }
 
 
 
-#pragma mark - ArrayInsectaDelegate
-
-//метод из протокола ArrayInsectaDelegate на загрузку первого массива:
-- (void) makeArraysFirstArrayReady:(ArrayInsecta*) makeArrays FirstArray:(NSMutableArray*) firstArray {
-    [self reloadTableView]; //перегружаем таблицу
-    [self.arrayM removeAllObjects]; // очищаем массив
-     self.arrayM = firstArray; //получаем таблицу по методу протокола
-     self.isFirstArray = YES;
-}
-
-//метод из протокола ArrayInsectaDelegate на загрузку второго массива:
-- (void) makeArraysSecondArrayReady:(ArrayInsecta*) makeArrays SecondArray:(NSMutableArray*) secondArray {
-    [self reloadTableView];
-    [self.arrayM removeAllObjects];
-     self.arrayM = secondArray;
-     self.isFirstArray = NO;
-}
+//#pragma mark - ArrayInsectaDelegate
+//
+////метод из протокола ArrayInsectaDelegate на загрузку первого массива:
+//- (void) makeArraysFirstArrayReady:(ArrayInsecta*) makeArrays FirstArray:(NSMutableArray*) firstArray {
+//    [self reloadTableView]; //перегружаем таблицу
+//    [self.arrayM removeAllObjects]; // очищаем массив
+//     self.arrayM = firstArray; //получаем таблицу по методу протокола
+//     self.isFirstArray = YES;
+//}
+//
+////метод из протокола ArrayInsectaDelegate на загрузку второго массива:
+//- (void) makeArraysSecondArrayReady:(ArrayInsecta*) makeArrays SecondArray:(NSMutableArray*) secondArray {
+//    [self reloadTableView];
+//    [self.arrayM removeAllObjects];
+//     self.arrayM = secondArray;
+//     self.isFirstArray = NO;
+//}
 
 //метод, который перезагружает таблицу в текущем окне:
 - (void) reloadTableView {

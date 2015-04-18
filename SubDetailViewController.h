@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ArrayInsecta.h"
 
-@interface SubDetailViewController : UIViewController
+@interface SubDetailViewController : UIViewController <ArrayInsectaDelegate>
 
 @property (nonatomic, strong) NSMutableArray * arrayMSub;
 @property (nonatomic, assign) BOOL isFirstArray;

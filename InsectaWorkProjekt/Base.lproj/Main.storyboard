@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-923" y="15"/>
+            <point key="canvasLocation" x="-983" y="21"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0eN-fF-n7l">
@@ -135,7 +135,111 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LhZ-UL-XJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-562" y="15"/>
+            <point key="canvasLocation" x="-592" y="21"/>
+        </scene>
+        <!--Deterninant View Controller-->
+        <scene sceneID="7g1-9E-Y9s">
+            <objects>
+                <viewController storyboardIdentifier="determinant" id="QuI-JS-nxD" customClass="DeterninantViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yDf-Of-NKi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q1g-qb-kHI">
+                                <rect key="frame" x="58" y="114" width="207" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="по взрослой стадии">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TX6-wd-zag">
+                                <rect key="frame" x="94" y="202" width="133" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="по личинкам">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AHI-pb-t3P">
+                                <rect key="frame" x="67" y="304" width="189" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="еще какое-нибудь">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.76732170349999995" green="1" blue="0.7561078792" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_GrownDeterminant" destination="Q1g-qb-kHI" id="CI0-jT-ROE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHO-pJ-JiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="835"/>
+        </scene>
+        <!--Grown Deterninant View Controller-->
+        <scene sceneID="dyS-m9-4Tg">
+            <objects>
+                <viewController storyboardIdentifier="grown" id="OlQ-yF-Lgw" customClass="GrownDeterninantViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vAs-4l-Oex">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RXK-S0-75f">
+                                <rect key="frame" x="28" y="446" width="105" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.76732170349999995" green="1" blue="0.7561078792" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ДА">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="n1q-3A-Bq3">
+                                <rect key="frame" x="187" y="446" width="105" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="НЕТ">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hAi-BR-G4K">
+                                <rect key="frame" x="28" y="518" width="257" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="В Оглавление">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" textAlignment="center" id="DQs-4d-kBd">
+                                <rect key="frame" x="9" y="134" width="302" height="252"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.76732170349999995" green="1" blue="0.7561078792" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.76732170349999995" green="1" blue="0.7561078792" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_GoContent" destination="hAi-BR-G4K" id="ylR-Nj-tRf"/>
+                        <outlet property="button_NO" destination="n1q-3A-Bq3" id="jtq-4a-POI"/>
+                        <outlet property="button_YES" destination="RXK-S0-75f" id="p3h-Qv-rDS"/>
+                        <outlet property="text_GrownDeterminant" destination="DQs-4d-kBd" id="AEr-TK-Bsl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KEY-GD-SA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="833"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="Jrz-9o-xpz">
@@ -183,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGj-Do-6F8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-86" y="224"/>
+            <point key="canvasLocation" x="-200" y="182"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DMP-R5-2rV">
@@ -280,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hY8-zY-dfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="341" y="224"/>
+            <point key="canvasLocation" x="149" y="182"/>
         </scene>
         <!--Datail View Controller-->
         <scene sceneID="tCO-Gl-ORA">
@@ -346,7 +450,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zp1-sg-Fp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705" y="224"/>
+            <point key="canvasLocation" x="503" y="182"/>
         </scene>
         <!--Sub Detail View Controller-->
         <scene sceneID="uzW-lr-a3R">
@@ -404,17 +508,6 @@
                                 <rect key="frame" x="0.0" y="536" width="320" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yxX-To-Ons">
-                                        <rect key="frame" x="8" y="0.0" width="88" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="подотряды">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="button_SubOrder:" destination="TSg-hh-2Qr" eventType="touchUpInside" id="2ah-M2-qAJ"/>
-                                            <action selector="push_One:" destination="D65-86-aei" eventType="touchUpInside" id="Oz4-o1-Gz2"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0zX-ko-c3e">
                                         <rect key="frame" x="205" y="0.0" width="107" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -424,6 +517,17 @@
                                         <connections>
                                             <action selector="button_FamilyOrder:" destination="TSg-hh-2Qr" eventType="touchUpInside" id="lFf-JQ-kDY"/>
                                             <action selector="push_Two:" destination="D65-86-aei" eventType="touchUpInside" id="j5d-2P-UC9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yxX-To-Ons">
+                                        <rect key="frame" x="8" y="0.0" width="88" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="подотряды">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button_SubOrder:" destination="TSg-hh-2Qr" eventType="touchUpInside" id="2ah-M2-qAJ"/>
+                                            <action selector="push_One:" destination="D65-86-aei" eventType="touchUpInside" id="Oz4-o1-Gz2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -440,7 +544,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2y-5m-awH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="224"/>
+            <point key="canvasLocation" x="855" y="182"/>
         </scene>
         <!--Structure View Controller-->
         <scene sceneID="ZiN-Vo-Dnf">
@@ -450,11 +554,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="строение1.jpg" highlightedImage="строение6.jpg" id="alQ-Zj-Wd0">
-                                <rect key="frame" x="-6" y="73" width="326" height="249"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="строение1.jpg" highlightedImage="строение6.jpg" id="alQ-Zj-Wd0">
+                                <rect key="frame" x="-6" y="74" width="326" height="249"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="строение6.jpg" highlightedImage="строение1.jpg" id="FVP-PB-eqS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="строение6.jpg" highlightedImage="строение1.jpg" id="FVP-PB-eqS">
                                 <rect key="frame" x="0.0" y="331" width="320" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -466,7 +570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3NZ-L7-Z4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="186" y="-410"/>
+            <point key="canvasLocation" x="-210" y="-458"/>
         </scene>
         <!--Information View Controller-->
         <scene sceneID="e1f-An-mn2">
@@ -510,7 +614,7 @@
                     </state>
                 </button>
             </objects>
-            <point key="canvasLocation" x="-189" y="-415"/>
+            <point key="canvasLocation" x="-592" y="-621"/>
         </scene>
     </scenes>
     <resources>

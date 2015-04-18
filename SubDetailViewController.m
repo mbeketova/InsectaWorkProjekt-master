@@ -172,10 +172,12 @@
     
 }
 
+//срабатывание кнопки: подотряд
 - (IBAction)button_SubOrder:(id)sender {
     [self makeFirstArray];
 }
 
+//срабатывание кнопки: семейство
 - (IBAction)button_FamilyOrder:(id)sender {
     [self makeAnotherArray];
 }
